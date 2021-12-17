@@ -2047,6 +2047,8 @@ span.active::before {
 .book-block {
   position: relative;
   width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .book-img>img {
@@ -2915,6 +2917,8 @@ input[type="radio"i]~label {
 .folder-book-img {
   position: relative;
   width: 220px;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .folder-book-img:hover {
@@ -3700,10 +3704,11 @@ body.c2 {
   justify-content: center;
 }
 
-.personal-information h3 {
+.personal-information h3 , .performance-course h3 , .chartbar-area>h3{
   width: 100%;
   margin: 10px auto;
   text-align: center;
+  font-size: 23px;
 }
 
 .personal-information p {
@@ -4109,9 +4114,7 @@ fieldset.img>.answer-list {
   flex-wrap: wrap;
   padding: 25px 0px 0px;
 }
-.performance-course h3{
-  margin-bottom: 10px;
-}
+
 .full-mark-highest , .book-total-highest,
 .book-month-highest , .full-month-lowest{
   display: flex;
@@ -4329,11 +4332,6 @@ text-align: center;
 .chartbar-area {
   width: 100%;
   margin: 0px auto;
-}
-
-.chartbar-area>h3 {
-  width: 100%;
-  text-align: center;
 }
 /* 圓餅圖結束*/
 
