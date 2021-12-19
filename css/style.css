@@ -4184,18 +4184,25 @@ fieldset.img>.answer-list {
   justify-content: center;
   text-align: center;
   margin: 10px auto;
+  color: #fff;
+}
+
+.lowest p,
+.highest p,
+.average p {
+  color: #fff;
 }
 
 .lowest {
-  background-color: #fcefc9;
+  background-color: #2BC5CF;
 }
 
 .highest {
-  background-color: #e7cfd9;
+  background-color: #F77800;
 }
 
 .average {
-  background-color: #c7d5ed;
+  background-color: #93A315;
 }
 
 .chartbar-area>h1 {
@@ -4208,6 +4215,7 @@ fieldset.img>.answer-list {
 .course-chart-degree, .course-chart-sixmonth, .course-chart-degree-statistics, .course-chart-degree-statistics {
   text-align: center;
   padding: 60px 0px 15px;
+  margin: 0 auto;
 }
 
 .course-chart-degree__control , .course-chart-sixmonth__control {
@@ -4332,6 +4340,8 @@ text-align: center;
 .chartbar-area {
   width: 100%;
   margin: 0px auto;
+  flex-wrap: wrap;
+  display: flex;
 }
 /* 圓餅圖結束*/
 
