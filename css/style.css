@@ -281,6 +281,23 @@ div#toggle span {
   text-decoration: none;
 }
 
+.menu.after-login{
+  background-color: transparent;
+}
+.menu-pagination , .menu-language{
+  display: flex;
+  border-radius: 10px;
+  background-color: #FCFAF7;
+  margin: 0px 5px;
+}
+.menu-pagination > li , .menu-language > li{
+  font-size: 17px;
+  padding: 15px 12px;
+}
+.menu-language{
+  background-color: #f5c000;
+}
+
 .current {
   color: #10398C;
   font-weight: bold;
