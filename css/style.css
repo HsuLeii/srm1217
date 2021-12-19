@@ -284,6 +284,18 @@ div#toggle span {
 .menu.after-login{
   background-color: transparent;
 }
+.menu-avatar{
+  width: 52px;
+height: 52px;
+background-color: #FCFAF7;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0px 5px;
+
+}
+
 .menu-pagination , .menu-language{
   display: flex;
   border-radius: 10px;
@@ -3363,7 +3375,7 @@ margin-left: 134.14px;
 
 .bookmenu.column>div>a {
   position: absolute;
-  left: calc(100% + 12px);
+  left: calc(100% + 5px);
   top: 50%;
   transform: translate(0px, -50%);
 }
