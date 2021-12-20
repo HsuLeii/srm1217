@@ -5057,6 +5057,24 @@ text-align: center;
     z-index: 11;
   }
 
+  .menu.after-login{
+    background-color: #FCFAF7;
+  }
+
+  .menu-pagination, .menu-language {
+    background-color: transparent;
+    box-shadow: none;
+    flex-direction: column;
+}
+.menu-pagination > li, .menu-language > li {
+  font-size: 17px;
+  padding: 5px 10px;
+}
+
+.menu-language li:nth-last-child(1)>ul {
+  background-color: transparent;
+}
+
   body.fixed {
     position: relative;
   }
