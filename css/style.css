@@ -267,9 +267,14 @@ div#toggle span {
   z-index: 5;
 }
 
-.menu li:nth-last-child(1)>ul {
-  left: -59%;
+.menu-language li:nth-last-child(1)>ul {
+  left: auto;
+  right: 0px;
+  background-color: #f5c000;
+  border-radius: 10px 0px 10px 10px;
 }
+
+
 
 .menu>li {
   font-size: 17px;
@@ -284,7 +289,7 @@ div#toggle span {
 .menu.after-login{
   background-color: transparent;
 }
-.menu-avatar{
+.dropdown.menu-avatar{
   width: 52px;
 height: 52px;
 background-color: #FCFAF7;
@@ -335,7 +340,7 @@ margin: 0px 5px;
 .dropdown-content {
   position: absolute;
   display: none;
-  top: 52.4px;
+  top: 45.5px;
   left: -46%;
   z-index: 1;
   background-color: #FCFAF7;
@@ -347,13 +352,36 @@ margin: 0px 5px;
 }
 
 .dropdown-content li {
-  width: 180px;
+  width: auto;
   padding: 6px 6px;
   text-align: center;
 }
 
-.dropdown-content li:nth-last-child(1) {
-  border-bottom: 0px solid #4B4B4B;
+.dropdown-content li a{
+  white-space: nowrap; 
+  padding: 10px 15px;
+}
+.content-avatar-menu {
+  top: 59px;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  right: auto;
+  border-radius: 10px;
+}
+.content-avatar-menu::before {
+  position: absolute;
+  content: "";
+  border-width: 0px 7px 7px 7px;
+    top: -7px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #fcfaf7;
+}
+ul.dropdown-content.content-language-menu {
+  left: auto;
+  right: 0px;
 }
 
 .dropdown:hover>.dropdown-content {
@@ -4212,7 +4240,7 @@ fieldset.img>.answer-list {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 10px auto;
+  margin: 60px auto 15px;
   color: #fff;
 }
 
