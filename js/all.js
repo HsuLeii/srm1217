@@ -37,7 +37,9 @@ $(function () {
       //被點擊的元素新增一組class(open)
     }
   })
-
+  $(".menu-avatar").click(function () {
+    $(".dropdown-content.content-avatar-menu").toggle();
+  });
   $(read).click(function () {
     alert("繼續閱讀請登入");
   });
