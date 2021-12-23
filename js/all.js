@@ -47,11 +47,6 @@ $(function () {
     alert("繼續閱讀請登入");
   });
 
-  $(".send").click(function () {
-    $(".topic").addClass("wrong");
-    $(".topic2").addClass("correct");
-  });
-
     $(".dacc-test").click(function(){
       $(".dacctest-text > p").html("測驗已完成，下次測驗時間:<br />2022/10/14 7:00AM-2022/12/31 5:00PM");
       $(this).hide();
