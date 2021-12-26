@@ -32,36 +32,50 @@
         </div>
         <div id="toggle" class=""><span></span></div>
         <nav>
-            <ul class="menu">
-                <li>
-                    <a href="personal.html">個人首頁</a>
-                </li>
-                <li>
-                    <a href="map.html">閱讀地圖</a>
-                </li>
-                <li>
-                    <a href="library.html">閱讀里程</a>
-                </li>
-                <li>
-                    <a href="course.html">閱讀報告</a>
-                </li>
-                <li>
-                    <a href="report.html" class="current">閱讀診斷</a>
-                </li>
-                <li>
-                    <a href="index.html">我要登出</a>
-                </li>
-                <li class="dropdown">
-                    <a class="" href="">繁體中文</a><span class="arrow down button-language-menu"></span>
-                    <ul class="dropdown-content content-language-menu">
-                        <li>
-                            <a href="">English</a>
-                        </li>
-                        <li>
-                            <a href="">簡體中文</a>
-                        </li>
-                    </ul>
-                </li>
+            <ul class="menu after-login">
+                <div class="">
+                    <li class="dropdown dropdown-avatar menu-avatar">
+                        <p class="" href="">L</p><span class="button-avatar-menu"></span>
+                        <ul class="dropdown-content content-avatar-menu">
+                            <li>
+                                <a href="personal.html">個人首頁</a>
+                            </li>
+                           
+                            <li>
+                                <a href="index.html">我要登出</a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="menu-pagination">
+                    <li>
+                        <a href="map.html">閱讀地圖</a>
+                    </li>
+                    <li>
+                        <a href="library.html">閱讀里程</a>
+                    </li>
+                    <li>
+                        <a href="course.html">閱讀報告</a>
+                    </li>
+                    <li>
+                        <a href="report.html" class="current">閱讀診斷</a>
+                    </li>
+                </div>
+                <div class="menu-language">
+                    <li class="dropdown">
+                        <a class="" href="">繁體中文</a><span class="arrow down button-language-menu"></span>
+                        <ul class="dropdown-content content-language-menu">
+                            <li>
+                                <a href="">English</a>
+                            </li>
+                            <li>
+                                <a href="">簡體中文</a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                
+                
             </ul>
         </nav>
     </header>
@@ -111,79 +125,6 @@
 
         </div>
 
-        <div class="daccPage-DACC__chart chartbar-area">
-            <h3>DACC-M 閱讀能力診斷歷程</h3>
-            <div class="daccPage-DACC-table table-responsive ">
-
-                <table class="table table-bordered daccPage-DACC__table">
-                    <thead>
-                        <tr>
-                            <td rowspan="2">Date of Test</td>
-                            <td rowspan="2">CEFR<br>Level</td>
-                            <td rowspan="2">CEFR<br>Level</td>
-                            <td rowspan="2">Score</td>
-                            <td colspan="5">整體閱讀理解能力</td>
-                            <td rowspan="2">Report</td>
-                        </tr>
-                        <tr>
-                            <td><span class="dacc-icon-readinSkills skill-word">V</span><br />Vocabualry</td>
-                            <td><span class="dacc-icon-readinSkills skill-superficiall">L</span><br />Literal
-                                Comprehesion</td>
-                            <td><span class="dacc-icon-readinSkills skill-textual">C</span><br />Contextual Integration
-                            </td>
-                            <td><span class="dacc-icon-readinSkills skill-analysis">I</span><br />Inferential
-                                Comprehension</td>
-                            <td><span class="dacc-icon-readinSkills skill-inference">A</span><br />Analysis and
-                                Evaluation</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><span class="dacc-icon-times">3</span>2021/12/15</td>
-                            <td>Pre A1</td>
-                            <td>Intermediate High</td>
-                            <td>SR427</td>
-                            <td>SR80</td>
-                            <td>SR81</td>
-                            <td>SR87</td>
-                            <td>SR98</td>
-                            <td>SR79</td>
-                            <td><button class="btn btn-default daccPage-DACC__table-btn cursor" type="submit">
-                                    <p>查看</p>
-                                </button>
-                        </tr>
-                        <tr>
-                            <td><span class="dacc-icon-times">2</span>2020/11/15</td>
-                            <td>Pre A1</td>
-                            <td>Intermediate High</td>
-                            <td>SR427</td>
-                            <td>SR80</td>
-                            <td>SR81</td>
-                            <td>SR87</td>
-                            <td>SR98</td>
-                            <td>SR79</td>
-                            <td><button class="btn btn-default daccPage-DACC__table-btn cursor" type="submit">
-                                    <p>查看</p>
-                                </button>
-                        </tr>
-                        <tr>
-                            <td><span class="dacc-icon-times">1</span>2018/10/15</td>
-                            <td>Pre A1</td>
-                            <td>Intermediate High</td>
-                            <td>SR427</td>
-                            <td>SR80</td>
-                            <td>SR81</td>
-                            <td>SR87</td>
-                            <td>SR98</td>
-                            <td>SR79</td>
-                            <td><button class="btn btn-default daccPage-DACC__table-btn cursor" type="submit">
-                                    <p>查看</p>
-                                </button>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
 
 
         <div class="daccPage-DACC__chart chartbar-area">
@@ -204,8 +145,8 @@
                             <td><span class="dacc-icon-readinSkills skill-word">字</span><br />字詞辨識</td>
                             <td><span class="dacc-icon-readinSkills skill-superficiall">表</span><br />表層文意理解</td>
                             <td><span class="dacc-icon-readinSkills skill-textual">文</span><br />文意統整</td>
-                            <td><span class="dacc-icon-readinSkills skill-analysis">分</span><br />分析評鑑</td>
-                            <td><span class="dacc-icon-readinSkills skill-inference">推</span><br />推論理解</td>
+                            <td><span class="dacc-icon-readinSkills skill-analysis">推</span><br />推論理解</td>
+                            <td><span class="dacc-icon-readinSkills skill-inference">分</span><br />分析評鑑</td>
                         </tr>
                     </thead>
                     <tbody>
@@ -302,7 +243,7 @@
                             <div class="chart-dimensions-x">測次</div>
                             <div class="chart-dimensions-y">SR</div>
                             <div class="chart-dimensions-label">
-                                <span>字詞辨識</span><span>文意統整</span><span>分析評鑑</span><span>推論理解</span><span>表層文意理解</span>
+                                <span>字詞辨識</span><span>表層文意理解</span><span>文意統整</span><span>推論理解</span><span>分析評鑑</span>
                             </div>
                             <!-- <div class="chart-overall-xDeco"><span><span class="dacc-icon-times"></span></span><span><span class="dacc-icon-times"></span></span><span><span class="dacc-icon-times"></span></span><span></span><span><span class="dacc-icon-times"></span></span><span><span class="dacc-icon-times"></span></span><span><span class="dacc-icon-times"></span></span><span></span><span><span class="dacc-icon-times"></span></span><span><span class="dacc-icon-times"></span></span><span><span class="dacc-icon-times"></span></span><span></span><span><span class="dacc-icon-times"></span></span><span><span class="dacc-icon-times"></span></span><span><span class="dacc-icon-times"></span></span><span></span><span><span class="dacc-icon-times"></span></span><span><span class="dacc-icon-times"></span></span><span><span class="dacc-icon-times"></span></span></div></div> -->
                         </div>
@@ -335,8 +276,8 @@
 
                     <div class="information">
                         <div class="mail">
-                            <a href="mailto:service@smartreading.net"><img src="image/svg/mail.svg" alt="">
-                                service@smartreading.net</a>
+                            <a href="mailto:service@coolchinese.net"><img src="image/svg/mail.svg" alt="">
+                                service@coolchinese.net</a>
                         </div>
                         <div class="map">
                             <a href="https://goo.gl/maps/5Sv3LDvcfnnZanR97" target="_blank"><img src="image/svg/map.svg"
