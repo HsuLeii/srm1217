@@ -2223,6 +2223,7 @@ span.pagination li {
       width: auto;
       height: auto;
       border-radius: 16px;
+    padding:0px 5px;
   }
 
   span.pagination a, 
@@ -7394,9 +7395,7 @@ display: none;
     padding: 0px;
   }
 
-  span.pagination a:nth-last-child(1), span.pagination a:nth-child(2), span.pagination a:nth-last-child(2), span.pagination a:first-child{
-    padding: 0px 5px;
-  }
+
 
   .introduction-item {
     height: 150px !important;
