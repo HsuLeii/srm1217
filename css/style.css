@@ -4825,6 +4825,25 @@ table.table.list-book.bookcase:after {
   top: 0px;
 }
 
+/*edit-profile 編輯個人資料*/
+.profile-group-row{
+    flex-direction: row !important;
+}
+.profile-group-row p{
+    margin-right: 10px;
+}
+.student-photo{
+    position: relative;
+}
+.student-photo-button{
+    position: absolute;
+    left: 100%;
+    bottom: 0%;
+    width: 35px;
+}
+.student-photo-button > img{
+    width: 100%;
+}
 /*report 閱讀診斷*/
 
 .slide.report {
