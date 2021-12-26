@@ -3093,7 +3093,6 @@ input[type="radio"i]~label {
 
 .bottom-button-area > .test-badge{
   width: 50%;
-  justify-content: flex-end;
   margin: 10px 0px 0px;
 }
 .bottom-button-area > .test-badge div{
