@@ -2489,7 +2489,7 @@ a.read,
   width: 100%;
 }
 
-.account-area>form {
+.account-area>div {
   display: flex;
   flex-direction: column;
   margin-bottom: 25px;
