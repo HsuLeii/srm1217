@@ -2757,7 +2757,7 @@ input[type="radio"i]~label {
 .folder-tag {
   display: flex;
   position: absolute;
-  top: -45px;
+  top: -41px;
   left: 10px;
 }
 
@@ -2800,7 +2800,6 @@ input[type="radio"i]~label {
   display: inline-block;
   padding: 9px 30px;
   position: relative;
-  margin: 0px 10px;
 }
 
 .option-tag.active {
@@ -2819,8 +2818,7 @@ input[type="radio"i]~label {
   right: 0;
   bottom: 0;
   left: 0;
-  transform: perspective(10px) rotateX(5deg);
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
   background: #fcfaf7;
 }
 
