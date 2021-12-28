@@ -4116,6 +4116,9 @@ margin-bottom: 20px;
 .test-badge{
   display: flex;
   width: 30%;
+  position: absolute;
+  right: 10px;
+  bottom: 50%;
 }
 .test-badge div {
   width: calc(33% - 5px);
@@ -4181,6 +4184,7 @@ label>img {
 
 fieldset.img {
   align-items: flex-start;
+  flex-direction:row;
 }
 
 fieldset.img>.answer-list {
@@ -6957,6 +6961,7 @@ display: none;
     order: 3;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .test-badge div {
@@ -7797,4 +7802,11 @@ input[type="radio"]:checked+*::before {
   to {
     width: 100%;
   }
+}
+
+@keyframes mymove {
+  50% { box-shadow: 0 0 20px yellow;}
+}
+a.badge-img {
+  animation: mymove 3s infinite;
 }
