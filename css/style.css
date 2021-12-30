@@ -1180,7 +1180,7 @@ span.active::before {
 
 .b1-meter:hover>span::before,
 .b1-meter>span.active::before {
-  border-top-color: #ce552d;
+  border-top-color: #e97f5c;
 }
 
 .b2-meter:hover>span::before,
@@ -1279,7 +1279,7 @@ span.active::before {
 }
 
 .grade-content.b1 {
-  border: 1px solid #ce552d;
+  border: 1px solid #e97f5c;
 }
 
 .grade-content.b2 {
@@ -1326,7 +1326,7 @@ span.active::before {
 }
 
 .grade-content.b1>h4 {
-  color: #ce552d;
+  color: #e97f5c;
 }
 
 .grade-content.b2>h4 {
@@ -1354,7 +1354,7 @@ span.active::before {
 }
 
 .modal.b1>h2 {
-  color: #ce552d;
+  color: #e97f5c;
 }
 
 .modal.b2>h2 {
@@ -1383,7 +1383,7 @@ span.active::before {
 }
 
 .b1-meter>span {
-  background-color: #ce552d;
+  background-color: #e97f5c;
 }
 
 .b2-meter>span {
@@ -1439,7 +1439,7 @@ span.active::before {
 }
 
 .bar.b1-background {
-  background-color: #de5732;
+  background-color: #e19069;
 }
 
 .bar.b2-background {
@@ -1630,7 +1630,7 @@ span.active::before {
 }
 
 .x-timeline-item_marker-inner.b1 {
-  background-color: #ce552d;
+  background-color: #e97f5c;
 }
 
 .x-timeline-item_marker-inner.b2 {
@@ -1658,7 +1658,7 @@ span.active::before {
 }
 
 .x-timeline-item_content-inner.b1>div.b1-content {
-  border: 1px solid #ce552d;
+  border: 1px solid #e97f5c;
 }
 
 .x-timeline-item_content-inner.b2>div.b2-content {
@@ -1686,7 +1686,7 @@ span.active::before {
 }
 
 .x-timeline-item_content-inner.b1>div>h4 {
-  color: #ce552d;
+  color: #e97f5c;
 }
 
 .x-timeline-item_content-inner.b2>div>h4 {
@@ -1745,7 +1745,7 @@ span.active::before {
 }
 
 .b1>.sample-article>a {
-  background-color: #ce552d;
+  background-color: #e97f5c;
 }
 
 .b2>.sample-article>a {
@@ -1819,17 +1819,17 @@ span.active::before {
 }
 
 .sample-btn.b1>button {
-  color: #ce552d;
-  border: 1px solid #ce552d;
+  color: #e97f5c;
+  border: 1px solid #e97f5c;
 }
 
 .sample-btn.b1>button>a {
-  color: #ce552d;
+  color: #e97f5c;
 }
 
 .sample-btn.b1>button:hover,
 .sample-btn.b1>button:hover>a {
-  background-color: #ce552d;
+  background-color: #e97f5c;
   color: #fff;
 }
 
@@ -1961,7 +1961,7 @@ span.active::before {
 }
 
 .bookmenu>.b1 {
-  border-color: #ce552d;
+  border-color: #e97f5c;
 }
 
 .bookmenu>.b2 {
@@ -2020,7 +2020,7 @@ span.active::before {
 
 .bookmenu>.b1.active,
 .bookmenu>.b1:hover {
-  background-color: #ce552d;
+  background-color: #e97f5c;
 }
 
 .bookmenu>.b2.active,
@@ -2051,7 +2051,7 @@ span.active::before {
 }
 
 .bookmenu>.b1>p>a {
-  color: #ce552d;
+  color: #e97f5c;
 }
 
 .bookmenu>.b2>p>a {
@@ -2177,7 +2177,7 @@ span.active::before {
 }
 
 .grade-tag.b1 {
-  background-color: #ce552d;
+  background-color: #e97f5c;
 }
 
 .grade-tag.b2 {
@@ -2926,17 +2926,17 @@ input[type="radio"i]~label {
 }
 
 .b1-tag::before {
-  border: 1px solid #ce552d;
-  color: #ce552d;
+  border: 1px solid #e97f5c;
+  color: #e97f5c;
   border-bottom: 0px;
 }
 
 .b1-tag.active::before {
-  background: #ce552d;
+  background: #e97f5c;
 }
 
 .b1-tag>p>a {
-  color: #ce552d;
+  color: #e97f5c;
 }
 
 .b1-tag.active>p>a {
@@ -3311,7 +3311,7 @@ input[type="radio"i]~label {
 }
 
 .icontext>p.b1 {
-  color: #ce552d;
+  color: #e97f5c;
 }
 
 .icontext>p.b2 {
@@ -3374,7 +3374,7 @@ input[type="radio"i]~label {
 
 .bullet.b1,
 .icontext.b1:before {
-  background-color: #ce552d;
+  background-color: #e97f5c;
 }
 
 .bullet.b2,
@@ -3546,11 +3546,11 @@ a.badge-img.done2 {
 }
 
 .progress-bar-area.b1 .progress-bar-progress.ready {
-  stroke: #ce552d;
+  stroke: #e97f5c;
 }
 
 .progress-bar.b1.done {
-  background-color: #ce552d;
+  background-color: #e97f5c;
 }
 
 .progress-bar-area.b2 .progress-bar-progress.ready {
@@ -3628,7 +3628,7 @@ a.badge-img.done2 {
 }
 
 .head-img.b1 {
-  border-color: transparent #ce552d transparent transparent;
+  border-color: transparent #e97f5c transparent transparent;
 }
 
 .head-img.b2 {
@@ -3699,7 +3699,7 @@ a.badge-img.done2 {
 }
 
 .head-img.avatar.b1>img {
-  border: 2px solid #ce552d;
+  border: 2px solid #e97f5c;
 }
 
 .head-img.avatar.b2>img {
@@ -3806,7 +3806,7 @@ li.avatar.b1:hover>img,
 li.avatar.b1:active>img,
 li.avatar.b1:focus>img,
 li.avatar.b1>img.active {
-  border: 3px solid #ce552d;
+  border: 3px solid #e97f5c;
 }
 
 li.avatar.b2:hover>img,
@@ -4170,7 +4170,7 @@ body.c2 {
 }
 
 .line.b1 {
-  background: #ce552d;
+  background: #e97f5c;
 }
 
 .line.b2 {
@@ -5908,7 +5908,7 @@ text-align: center;
   }
 
   .b1-tag::before {
-    border-bottom: 1px solid #ce552d;
+    border-bottom: 1px solid #e97f5c;
   }
 
   .b2-tag::before {
@@ -6102,7 +6102,7 @@ text-align: center;
   }
 
   .head-img.b1 {
-    border-color: #ce552d transparent transparent transparent;
+    border-color: #e97f5c transparent transparent transparent;
   }
 
   .head-img.b2 {
