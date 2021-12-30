@@ -1161,24 +1161,22 @@
                 </div>
             </div>
             <div class="page">
-                <span class="pagination  white-pagination">
-                    <li><a href="#">« 上一頁</a></li>
-                    <li class="pagenumber"><a href="#" class="active">1</a></li>
-                    <li class="pagenumber"><a href="#">2</a></li>
-                    <li class="pagenumber"><a href="#">3</a></li>
-                    <li><a href="#">下一頁 »</a></li>
-                </span>
-                <div class="select-pages-number">
-                    <p class="white">前往第</p>
-                    <select name="page" class="selectpage">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                    </select>
-                    <p class="white">頁</p>
-                </div>
 
-            </div>
+                <span id="ctl00_Content_body_DataPager1" class="pagination  white-pagination"><a disabled="disabled" class="pagenumber firstnn">第一頁</a><span class="active">1</span><a class="pagenumber" href="javascript:__doPostBack('ctl00$Content_body$DataPager1$ctl01$ctl01','')">2</a><a class="pagenumber" href="javascript:__doPostBack('ctl00$Content_body$DataPager1$ctl01$ctl02','')">3</a><a class="pagenumber" href="javascript:__doPostBack('ctl00$Content_body$DataPager1$ctl01$ctl03','')">4</a><a class="pagenumber" href="javascript:__doPostBack('ctl00$Content_body$DataPager1$ctl01$ctl04','')">5</a><a class="lastnn" href="javascript:__doPostBack('ctl00$Content_body$DataPager1$ctl02$ctl00','')">最後一頁</a></span>
+                <span id="ctl00_Content_body_DataPager2" class="select-pages-number">
+                                <p class="gotopage">前往</p>
+                                <select name="ctl00$Content_body$DataPager2$ctl00$PageJump" onchange="javascript:setTimeout('__doPostBack(\'ctl00$Content_body$DataPager2$ctl00$PageJump\',\'\')', 0)" id="ctl00_Content_body_DataPager2_ctl00_PageJump">
+                        <option selected="selected" value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                
+                    </select>
+                                 <p></p>
+                            </span>
+                
+                            </div>
 
         </div>
 

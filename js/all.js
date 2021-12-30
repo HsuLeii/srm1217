@@ -9,34 +9,34 @@ $(".lowest , .highest , .average").css({"height": lowestwidth });
 $(".book-img").css({"height": bookimgheight }); 
 $(".topic").before("<img src=''/>");
 $(function () {
-  $("div.faq-answer").hide(); //子選單(div.faq-answer)隱藏
-  $(question).click(function () {
-    $("div.faq-answer").slideUp();
-    if ($("+div", this).css("display") == "none") {
-      $("+div", this).slideDown();
-      $(question).siblings("button").children("img").removeClass("up");
-      $(this).siblings("button").children("img").addClass("up");
-      //被點擊的元素新增一組class(open)
-    } else if ($("+div", this).css("display") == "block") {
-      $("+div", this).slideUp();
-      $(this).siblings("button").children("img").removeClass("up");
-      //被點擊的元素新增一組class(open)
-    }
-  })
+  // $("div.faq-answer").hide(); //子選單(div.faq-answer)隱藏
+  // $(question).click(function () {
+  //   $("div.faq-answer").slideUp();
+  //   if ($("+div", this).css("display") == "none") {
+  //     $("+div", this).slideDown();
+  //     $(question).siblings("span").children("img").removeClass("up");
+  //     $(this).siblings("span").children("img").addClass("up");
+  //     //被點擊的元素新增一組class(open)
+  //   } else if ($("+div", this).css("display") == "block") {
+  //     $("+div", this).slideUp();
+  //     $(this).siblings("span").children("img").removeClass("up");
+  //     //被點擊的元素新增一組class(open)
+  //   }
+  // })
 
-  $("button.question-arrow").click(function () {
-    $("div.faq-answer").slideUp();
-    if ($(this).prev().css("display") == "none") {
-      $(this).prev().slideDown();
-      $("button.question-arrow").children("img").removeClass("up");
-      $(this).children("img").addClass("up");
-      //被點擊的元素新增一組class(open)
-    } else if ($(this).prev().css("display") == "block") {
-      $(this).prev().slideUp();
-      $("button.question-arrow").children("img").removeClass("up");
-      //被點擊的元素新增一組class(open)
-    }
-  })
+  // $("span.question-arrow").click(function () {
+  //   $("div.faq-answer").slideUp();
+  //   if ($(this).prev().css("display") == "none") {
+  //     $(this).prev().slideDown();
+  //     $("span.question-arrow").children("img").removeClass("up");
+  //     $(this).children("img").addClass("up");
+  //     //被點擊的元素新增一組class(open)
+  //   } else if ($(this).prev().css("display") == "block") {
+  //     $(this).prev().slideUp();
+  //     $("span.question-arrow").children("img").removeClass("up");
+  //     //被點擊的元素新增一組class(open)
+  //   }
+  // })
   $(".menu-avatar").click(function () {
     $(".dropdown-content.content-avatar-menu").toggle();
   });
