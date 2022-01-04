@@ -153,7 +153,11 @@ $(function () {
   });
 
   $(".sort-difficulty").click(function () {
-    $(this).children("p").children("img").toggleClass("up");
+    $(".navigator").toggleClass("open");
+  });
+
+  $(".navigator-close").click(function () {
+    $(".navigator").hide();
   });
   
   if ($(this).width() < 1024) {

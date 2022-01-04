@@ -2500,7 +2500,8 @@ a.read,
 }
 
 .blocker {
-  background-color: rgba(0, 0, 0, 0.4) !important;
+  /* background-color: rgba(0, 0, 0, 0.4) !important; */
+  background-color: #00a7e5f0 !important;
 }
 
 /*login 登入*/
@@ -3144,22 +3145,26 @@ input[type="radio"i]~label {
 .try-again>h4 {
   background-color: #cb6359;
 }
-.test-button-area > a{
+
+.test-button-area>a {
   margin-right: 10px;
   margin-top: 0px;
 }
+
 .bottom-button-area>.test-badge {
   width: 100%;
   margin: 20px 0px;
-    position: relative;
-    right: auto;
-    bottom: auto;
+  position: relative;
+  right: auto;
+  bottom: auto;
 }
-.bottom-button-area > .test-button-area {
+
+.bottom-button-area>.test-button-area {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
+
 .bottom-button-area>.test-badge div {
   max-width: 120px;
   margin-left: 0px;
@@ -3415,33 +3420,34 @@ input[type="radio"i]~label {
   position: relative;
   width: calc((100% - 21%) / 8);
 }
-.progress-head > svg {
+
+.progress-head>svg {
   position: absolute;
-width: 100%;
-z-index: 1;
-left: 50%;
-top: 50%;
-transform: translate(-50%, -50%) rotateY(-180deg);
+  width: 100%;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotateY(-180deg);
 }
 
 .progress-bar-background {
-fill: none;
-stroke: #e2eff0;
-stroke-width: 2px;
+  fill: none;
+  stroke: #e2eff0;
+  stroke-width: 2px;
 }
 
 .progress-bar-progress {
-fill: none;
-stroke: transparent;
-stroke-dasharray: 100 100;
-stroke-dashoffset: 100;
-stroke-dashoffset: 0px;
-stroke-linecap: round;
-stroke-width: 2px;
-transition: stroke-dashoffset 1s ease-in-out;
+  fill: none;
+  stroke: transparent;
+  stroke-dasharray: 100 100;
+  stroke-dashoffset: 100;
+  stroke-dashoffset: 0px;
+  stroke-linecap: round;
+  stroke-width: 2px;
+  transition: stroke-dashoffset 1s ease-in-out;
 }
 
-.progress-head img{
+.progress-head img {
   position: absolute;
   width: calc(100% - 4px);
   left: 50%;
@@ -3878,7 +3884,7 @@ body.a2 {
 .slide.a2-map {
   padding-top: 35px;
   padding-bottom: 0px;
-  background-color: #0d7d67;
+  background-color: #a2ded3;
 }
 
 /*b1-map b1地圖*/
@@ -4438,20 +4444,22 @@ fieldset.img>.answer-list {
 }
 
 .badge-modal {
-  background-image: url(../image/photo/slide-personal.png) !important;
   background-position: center !important;
   background-size: cover !important;
+  background: transparent !important;
+  box-shadow: none !important;
 }
 
+/* .read-badge-modal{
+  background-image: url(../image/photo/slide-personal.png) !important;
+}
+.test-badge-modal{
+  background-image: url(../image/photo/personal-header-orange.png) !important;
+} */
 .read-badge.badge-modal-content {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.read-badge.badge-modal-content>.modal-text>h3 {
-  border-bottom: 0px solid #fff;
-  padding: 0px;
 }
 
 .read-badge.badge-modal-content>img {
@@ -4479,8 +4487,13 @@ fieldset.img>.answer-list {
 }
 
 .badge-modal-content>img {
-  width: 30%;
-  max-width: 220px;
+  width: 45%;
+  max-width: 450px;
+}
+
+.badge-modal-content>.two-badge>div>img {
+  width: 90%;
+  max-width: 450px;
 }
 
 .badge-modal-content>.button {
@@ -4488,16 +4501,36 @@ fieldset.img>.answer-list {
   border-top: 1px solid #fff;
 }
 
-.badge-modal-content>.modal-text>h3 {
+.badge-modal-content>.modal-text>h3,
+.badge-modal-content>.two-badge>div>.modal-text>h3 {
   font-size: 26px;
-  color: #fcd716;
-  padding: 0px 0px 5px;
-  border-bottom: 1px solid #fff;
+  text-align: center;
+  color: #fff;
+  border-bottom: 0px solid #fff;
+  padding: 0px;
+  margin-bottom: 5px;
+}
+
+.badge-modal-content>.modal-text>p,
+.badge-modal-content>.two-badge>div>.modal-text>p {
+  color: #fff;
 }
 
 .badge-modal-content>.text>p {
   color: #fff;
   margin: 15px auto;
+}
+
+.two-badge {
+  display: flex;
+}
+
+.two-badge>div {
+  margin: 25px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*course 閱讀歷程*/
@@ -4529,6 +4562,7 @@ fieldset.img>.answer-list {
   width: 47.5%;
   padding: 25px 30px;
   position: relative;
+  overflow-x: scroll;
 }
 
 .performance,
@@ -4543,6 +4577,7 @@ fieldset.img>.answer-list {
   padding: 25px 30px;
   position: relative;
   margin-left: -15px;
+  overflow-x: scroll;
 }
 
 .personal-course {
@@ -4865,13 +4900,57 @@ text-align: center;
 
 /* 圓餅圖開始 */
 .chartbar-area {
-  width: 80%;
   margin: 0px auto;
   flex-wrap: wrap;
   display: flex;
 }
 
 /* 圓餅圖結束*/
+/* 導航小書人開始*/
+.navigator {
+  position: fixed;
+  bottom: 0px;
+  right: 25px;
+  width: 250px;
+  z-index: 1;
+}
+
+.navigator-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #4b4b4b45;
+  margin-bottom: 15px;
+}
+.navigator-content p{
+  margin-bottom: 5px;
+}
+.navigator-content p a{
+color: #00a7e5;
+}
+.navigator-content>.folder-book-img {
+  width: 130px;
+  height: 130px;
+}
+.navigator-content>.grade-tag {
+  position: relative;
+}
+.close-modal {
+  position: absolute;
+  top: -12.5px;
+  right: -12.5px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAA3hJREFUaAXlm8+K00Acx7MiCIJH/yw+gA9g25O49SL4AO3Bp1jw5NvktC+wF88qevK4BU97EmzxUBCEolK/n5gp3W6TTJPfpNPNF37MNsl85/vN/DaTmU6PknC4K+pniqeKJ3k8UnkvDxXJzzy+q/yaxxeVHxW/FNHjgRSeKt4rFoplzaAuHHDBGR2eS9G54reirsmienDCTRt7xwsp+KAoEmt9nLaGitZxrBbPFNaGfPloGw2t4JVamSt8xYW6Dg1oCYo3Yv+rCGViV160oMkcd8SYKnYV1Nb1aEOjCe6L5ZOiLfF120EjWhuBu3YIZt1NQmujnk5F4MgOpURzLfAwOBSTmzp3fpDxuI/pabxpqOoz2r2HLAb0GMbZKlNV5/Hg9XJypguryA7lPF5KMdTZQzHjqxNPhWhzIuAruOl1eNqKEx1tSh5rfbxdw7mOxCq4qS68ZTjKS1YVvilu559vWvFHhh4rZrdyZ69Vmpgdj8fJbDZLJpNJ0uv1cnr/gjrUhQMuI+ANjyuwftQ0bbL6Erp0mM/ny8Fg4M3LtdRxgMtKl3jwmIHVxYXChFy94/Rmpa/pTbNUhstKV+4Rr8lLQ9KlUvJKLyG8yvQ2s9SBy1Jb7jV5a0yapfF6apaZLjLLcWtd4sNrmJUMHyM+1xibTjH82Zh01TNlhsrOhdKTe00uAzZQmN6+KW+sDa/JD2PSVQ873m29yf+1Q9VDzfEYlHi1G5LKBBWZbtEsHbFwb1oYDwr1ZiF/2bnCSg1OBE/pfr9/bWx26UxJL3ONPISOLKUvQza0LZUxSKyjpdTGa/vDEr25rddbMM0Q3O6Lx3rqFvU+x6UrRKQY7tyrZecmD9FODy8uLizTmilwNj0kraNcAJhOp5aGVwsAGD5VmJBrWWbJSgWT9zrzWepQF47RaGSiKfeGx6Szi3gzmX/HHbihwBser4B9UJYpFBNX4R6vTn3VQnez0SymnrHQMsRYGTr1dSk34ljRqS/EMd2pLQ8YBp3a1PLfcqCpo8gtHkZFHKkTX6fs3MY0blKnth66rKCnU0VRGu37ONrQaA4eZDFtWAu2fXj9zjFkxTBOo8F7t926gTp/83Kyzzcy2kZD6xiqxTYnHLRFm3vHiRSwNSjkz3hoIzo8lCKWUlg/YtGs7tObunDAZfpDLbfEI15zsEIY3U/x/gHHc/G1zltnAgAAAABJRU5ErkJggg==);
+}
 
 /*footer*/
 footer {
@@ -6007,18 +6086,18 @@ text-align: center;
     width: 100%;
     margin-top: 15px;
     align-items: flex-start;
-}
+  }
 
-.test-button-area {
-  margin-right: 0px;
-  width: auto;
-}
+  .test-button-area {
+    margin-right: 0px;
+    width: auto;
+  }
 
   .bottom-button-area>.test-badge {
     flex-direction: row;
     width: 32%;
     margin: 0;
-    }
+  }
 
   /*map 地圖*/
   .main.map h1 {
@@ -6302,6 +6381,15 @@ text-align: center;
   .average h3 {
     font-size: 20px;
   }
+
+  /* 導航小書人開始*/
+.navigator {
+  width: 230px;
+}
+.navigator-content>.folder-book-img {
+  width: 110px;
+  height: 110px;
+}
 
   /*footer*/
   .footer-logo-area {
@@ -7024,33 +7112,34 @@ text-align: center;
 
   .folder-book-content {
     width: calc(95% - 130px);
-}
+  }
 
-.folder-book-img {
-  width: 130px;
-  height: 130px;
-}
+  .folder-book-img {
+    width: 130px;
+    height: 130px;
+  }
 
   .folder-book-text>h3 {
     height: auto;
     -webkit-line-clamp: 1;
-}
+  }
 
-.test-button-area {
-  width:auto;
-}
+  .test-button-area {
+    width: auto;
+  }
 
   .bottom-button-area>.test-badge {
     width: 50%;
     flex-direction: row;
     justify-content: flex-start;
   }
+
   .bottom-button-area>.test-badge div img {
     max-width: none;
     max-height: none;
     width: 100%;
     height: auto;
-}
+  }
 
   /*map 地圖*/
 
@@ -7282,7 +7371,7 @@ text-align: center;
   }
 
   .badge-modal-content>img {
-    width: 45%;
+    width: 80%;
   }
 
   .badge-modal-content>.text {
@@ -7303,9 +7392,10 @@ text-align: center;
     width: 100%;
   }
 
-  .wrong::before, .correct::before {
+  .wrong::before,
+  .correct::before {
     left: -40px;
-}
+  }
 
   /*course 閱讀歷程*/
 
@@ -7456,22 +7546,29 @@ text-align: center;
   .daccPage-DACC__chart-dimensions {
     padding-top: 40px;
   }
+
   /*徽章彈跳視窗*/
-  .badge-modal-content>.modal-text>h3{
-    font-size: 15px;
+  .badge-modal-content>.modal-text>h3,
+  .badge-modal-content>.two-badge>div>.modal-text>h3 {
+    font-size: 20px;
   }
+
   .badge-modal-content>.button {
     width: 90%;
     flex-direction: column;
-}
+  }
+
   .read-badge.badge-modal-content>.button>a {
     margin: 10px 20px;
     text-align: center;
-}
-a.read, .badge-modal-content>.button>a {
-  padding: 10px 10px;
-}
-/*徽章彈跳視窗*/
+  }
+
+  a.read,
+  .badge-modal-content>.button>a {
+    padding: 10px 10px;
+  }
+
+  /*徽章彈跳視窗*/
 
 }
 
@@ -7792,7 +7889,7 @@ a.read, .badge-modal-content>.button>a {
 
   .folder-book-content {
     width: 100%;
-}
+  }
 
   .test-button>h4 {
     text-align: left;
@@ -7802,7 +7899,8 @@ a.read, .badge-modal-content>.button>a {
     width: 100%;
     flex-direction: row;
     justify-content: flex-start;
-}
+  }
+
   /*map 地圖*/
 
   .map-progress {
@@ -7978,6 +8076,9 @@ a.read, .badge-modal-content>.button>a {
   .highest h3,
   .average h3 {
     font-size: 17px;
+  }
+  .navigator {
+    width: 200px;
   }
 
   /*footer*/
