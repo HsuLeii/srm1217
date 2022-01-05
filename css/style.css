@@ -2500,8 +2500,8 @@ a.read,
 }
 
 .blocker {
-  /* background-color: rgba(0, 0, 0, 0.4) !important; */
-  background-color: #00a7e5f0 !important;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  /* background-color: #00a7e5f0 !important; */
 }
 
 /*login 登入*/
@@ -2797,7 +2797,7 @@ input[type="radio"i]~label {
   background-color: #FCFAF7;
   position: relative;
   padding: 30px;
-  border: 1px solid;
+  border: 2px solid;
   border-color: #4c8f36;
   box-shadow: 1px 1px 5px #4b4b4b45;
   border-radius: 10px;
@@ -3691,7 +3691,12 @@ a.badge-img.done2 {
   border-radius: 50%;
   padding: 3px;
 }
-
+.head-img.avatar>p {
+  position: absolute;
+  left: 38.5px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 .head-img.avatar.pre>img {
   border: 2px solid #00a7e5;
 }
@@ -3778,6 +3783,15 @@ li.avatar {
 li.avatar>img {
   height: 100%;
   box-shadow: 1px 1px 5px #4b4b4b;
+}
+
+li.avatar>p {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 li.avatar:hover>img,
@@ -4462,8 +4476,28 @@ fieldset.img>.answer-list {
   align-items: center;
 }
 
-.read-badge.badge-modal-content>img {
+.read-badge.badge-modal-content>img,
+.read-badge.badge-modal-content>div>img {
+  display: block;
   margin: 25px auto;
+  width: 45%;
+  max-width: 450px;
+}
+
+.read-badge.badge-modal-content>.read-first, 
+.read-badge.badge-modal-content>.read-second,
+.read-badge.badge-modal-content>.read-preview {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.read-first>.modal-text, 
+.read-second>.modal-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .read-badge.badge-modal-content>.button>a {
@@ -4480,15 +4514,8 @@ fieldset.img>.answer-list {
   flex-wrap: wrap;
 }
 
-
-
 .badge-modal>a.close-modal {
   display: none !important;
-}
-
-.badge-modal-content>img {
-  width: 45%;
-  max-width: 450px;
 }
 
 .badge-modal-content>.two-badge>div>img {
@@ -4502,7 +4529,8 @@ fieldset.img>.answer-list {
 }
 
 .badge-modal-content>.modal-text>h3,
-.badge-modal-content>.two-badge>div>.modal-text>h3 {
+.badge-modal-content>.two-badge>div>.modal-text>h3,
+.badge-modal-content>div>.modal-text>h3 {
   font-size: 26px;
   text-align: center;
   color: #fff;
@@ -4512,8 +4540,10 @@ fieldset.img>.answer-list {
 }
 
 .badge-modal-content>.modal-text>p,
-.badge-modal-content>.two-badge>div>.modal-text>p {
+.badge-modal-content>.two-badge>div>.modal-text>p,
+.badge-modal-content>div>.modal-text>p {
   color: #fff;
+  text-align: center;
 }
 
 .badge-modal-content>.text>p {
@@ -4911,11 +4941,13 @@ text-align: center;
   position: fixed;
   bottom: 0px;
   right: 25px;
-  width: 250px;
-  z-index: 1;
+  width: 350px;
+  z-index: 2;
 }
 
 .navigator-content {
+  width: 80%;
+  margin-left: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6204,6 +6236,11 @@ text-align: center;
     transform: translate(-50%, 0%);
   }
 
+  .head-img.avatar>p {
+    left: 50%;
+    top: calc(-100% - 5px);
+}
+
   .certification-content>.photo {
     width: 170px;
   }
@@ -6384,7 +6421,7 @@ text-align: center;
 
   /* 導航小書人開始*/
 .navigator {
-  width: 230px;
+  width: 280px;
 }
 .navigator-content>.folder-book-img {
   width: 110px;
@@ -7394,7 +7431,7 @@ text-align: center;
 
   .wrong::before,
   .correct::before {
-    left: -40px;
+    left: -70px;
   }
 
   /*course 閱讀歷程*/
