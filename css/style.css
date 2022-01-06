@@ -3622,7 +3622,7 @@ a.badge-img.done2 {
 }
 
 .head-img.pre {
-  border-color: transparent #00a7e5 transparent transparent;
+  border-color: #4c8f36 transparent transparent transparent;
 }
 
 .head-img.a1 {
@@ -3698,7 +3698,7 @@ a.badge-img.done2 {
   transform: translate(-50%, -50%);
 }
 .head-img.avatar.pre>img {
-  border: 2px solid #00a7e5;
+  border: 2px solid #4c8f36;
 }
 
 .head-img.avatar.a1>img {
@@ -6201,7 +6201,7 @@ text-align: center;
   }
 
   .head-img.pre {
-    border-color: #00a7e5 transparent transparent transparent;
+    border-color: #4c8f36 transparent transparent transparent;
   }
 
   .head-img.a1 {
