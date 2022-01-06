@@ -468,10 +468,7 @@ rt {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 20mm;
-    margin-bottom: 20mm;
-    margin-left: 20mm;
-    margin-right: 20mm;
+    
   }
   
   .page::after {
