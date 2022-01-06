@@ -41,7 +41,8 @@ body {
 
 body {
   background-color: #F7F7F7;
-  counter-reset: page-number; /* 初始化，名字可自訂，數值為0 */
+  counter-reset: page-number;
+  /* 初始化，名字可自訂，數值為0 */
 }
 
 h1 {
@@ -175,6 +176,272 @@ rt {
 .bold {
   font-weight: bold;
 }
+
+.page {
+  /* page-break-inside: avoid; 若順著向下排列時會切開此元素，則直接換頁 */
+  /* page-break-after: always;  碰到此元素會直接換頁 */
+  page-break-inside: avoid;
+  position: relative;
+  background: linear-gradient(90deg, #00a7e5 42.5%, #f7f7f7 0%);
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.page::after {
+  /* content: counter(page-number); 取用該名字的計數器 */
+  /*counter-increment: page-number 1;  增加計數器數值 */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.report-title {
+  width: 35%;
+  z-index: 2;
+}
+
+.test-content {
+  width: 60%;
+  z-index: 2;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.fraction-area {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin: 15px auto 5px;
+}
+
+.fraction,
+.average {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.item>.fraction-area>.fraction>p:nth-child(2) {
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.item>.fraction-area>.average>p:nth-child(2) {
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.first-item>.fraction-area>.fraction>p:nth-child(2) {
+  background-color: #2783be;
+  border: 1.5px solid #2783be;
+}
+
+.first-item>.fraction-area>.average>p:nth-child(2) {
+  color: #2783be;
+  border: 1.5px solid #2783be;
+}
+
+.two-item>.fraction-area>.fraction>p:nth-child(2) {
+  background-color: #d4655c;
+  border: 1.5px solid #d4655c;
+}
+
+.two-item>.fraction-area>.average>p:nth-child(2) {
+  color: #d4655c;
+  border: 1.5px solid #d4655c;
+}
+
+.three-item>.fraction-area>.fraction>p:nth-child(2) {
+  background-color: #e1b539;
+  border: 1.5px solid #e1b539;
+}
+
+.three-item>.fraction-area>.average>p:nth-child(2) {
+  color: #e1b539;
+  border: 1.5px solid #e1b539;
+}
+
+.four-item>.fraction-area>.fraction>p:nth-child(2) {
+  background-color: #3f9979;
+  border: 1.5px solid #3f9979;
+}
+
+.four-item>.fraction-area>.average>p:nth-child(2) {
+  color: #3f9979;
+  border: 1.5px solid #3f9979;
+}
+
+.five-item>.fraction-area>.fraction>p:nth-child(2) {
+  background-color: #675f91;
+  border: 1.5px solid #675f91;
+}
+
+.five-item>.fraction-area>.average>p:nth-child(2) {
+  color: #675f91;
+  border: 1.5px solid #675f91;
+}
+
+.score {
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+.title-mark {
+  position: relative;
+  width: 20%;
+  z-index: 1;
+}
+
+.number-mark {
+  position: absolute;
+  left: -5%;
+  top: -15%;
+  width: 40%;
+}
+
+.item-content {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px #4b4b4b45;
+  overflow: hidden;
+  width: 75%;
+  margin-left: -5%;
+}
+
+.content-title {
+  padding: 10px 10px 10px 10%;
+}
+
+.first-item>.item-content>.content-title {
+  background-color: #2783be;
+}
+
+.two-item>.item-content>.content-title {
+  background-color: #d4655c;
+}
+
+.three-item>.item-content>.content-title {
+  background-color: #e1b539;
+}
+
+.four-item>.item-content>.content-title {
+  background-color: #3f9979;
+}
+
+.five-item>.item-content>.content-title {
+  background-color: #675f91;
+}
+
+.content-introduce {
+  padding: 10px 10px 10px 10%;
+}
+
+.chartbar-area {
+  margin: 0px auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: relative;
+  padding: 20px 0px;
+}
+
+.chartbar-bg {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  line-height: 0px;
+}
+
+.srscore,
+.cefr-level,
+.actfl-level {
+  width: 30%;
+  background-color: #f7ae00;
+  border-radius: 50%;
+  max-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.srscore>p,
+.cefr-level>p,
+.actfl-level>p {
+  text-align: center;
+  color: #154299;
+}
+
+.bottom-text {
+  width: 100%;
+}
+
+.bottom-text p {
+  margin: 0 auto;
+  padding: 10px 5%;
+  text-align: center;
+  color: #fff;
+}
+
+.bottom-text>p:nth-child(1) {
+  background-color: #2783be;
+}
+
+.bottom-text>p:nth-child(2) {
+  background-color: #154299;
+}
+
+@page {
+  /*size: portrait;  直向 */
+  /*size: landscape;  橫向 */
+  /*size: A4;  紙張大小 */
+  size: A4 portrait;
+  /* 混合使用 */
+  min-height: 100vh;
+  margin: 0;
+  /* 邊界與內容的距離 */
+}
+
+@media print {
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .page {
+    page-break-inside: avoid;
+    position: relative;
+    width: 100%;
+  }
+
+  .page::after {
+    /* content: counter(page-number);
+      counter-increment: page-number 1; */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 30px;
+    text-align: center;
+  }
+
   .page {
     /* page-break-inside: avoid; 若順著向下排列時會切開此元素，則直接換頁 */
     /* page-break-after: always;  碰到此元素會直接換頁 */
@@ -188,6 +455,7 @@ rt {
     justify-content: space-around;
     flex-wrap: wrap;
   }
+  
   .page::after {
     /* content: counter(page-number); 取用該名字的計數器 */
     /*counter-increment: page-number 1;  增加計數器數值 */
@@ -198,141 +466,173 @@ rt {
     font-size: 30px;
     text-align: center;
   }
-  .report-title{
-      width: 35%;
-      z-index: 2;
+  
+  .report-title {
+    width: 35%;
+    z-index: 2;
   }
-  .test-content{
-      width: 60%;
-      z-index: 2;
+  
+  .test-content {
+    width: 60%;
+    z-index: 2;
   }
-  .item{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
+  
+  .item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
-  .fraction-area{
-      display: flex;
-      width: 100%;
-      justify-content: flex-end;
-      margin: 15px auto 5px;
+  
+  .fraction-area {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin: 15px auto 5px;
   }
+  
   .fraction,
-  .average{
-      display: flex;
-      align-items: center;
-      margin-left: 10px;
+  .average {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
   }
-  .item>.fraction-area>.fraction>p:nth-child(2){
-      color: #fff;
-      padding: 5px 10px;
-      border-radius: 10px;
-  }
-  .item>.fraction-area>.average>p:nth-child(2){
+  
+  .item>.fraction-area>.fraction>p:nth-child(2) {
+    color: #fff;
     padding: 5px 10px;
     border-radius: 10px;
-}
-.first-item>.fraction-area>.fraction>p:nth-child(2){
-  background-color: #2783be;
-  border: 1.5px solid #2783be;
-}
-.first-item>.fraction-area>.average>p:nth-child(2){
-color: #2783be;
-border: 1.5px solid #2783be;
-}
-.two-item>.fraction-area>.fraction>p:nth-child(2){
-  background-color: #d4655c;
-  border: 1.5px solid #d4655c;
-}
-.two-item>.fraction-area>.average>p:nth-child(2){
-color: #d4655c;
-border: 1.5px solid #d4655c;
-}
-.three-item>.fraction-area>.fraction>p:nth-child(2){
-  background-color: #e1b539;
-  border: 1.5px solid #e1b539;
-}
-.three-item>.fraction-area>.average>p:nth-child(2){
-color: #e1b539;
-border: 1.5px solid #e1b539;
-}
-.four-item>.fraction-area>.fraction>p:nth-child(2){
-  background-color: #3f9979;
-  border: 1.5px solid #3f9979;
-}
-.four-item>.fraction-area>.average>p:nth-child(2){
-color: #3f9979;
-border: 1.5px solid #3f9979;
-}
-.five-item>.fraction-area>.fraction>p:nth-child(2){
-  background-color: #675f91;
-  border: 1.5px solid #675f91;
-}
-.five-item>.fraction-area>.average>p:nth-child(2){
-color: #675f91;
-border: 1.5px solid #675f91;
-}
-  .score{
-      font-size: 25px;
-      margin-left: 5px;
   }
-  .title-mark{
-      position: relative;
-      width: 25%;
-      z-index: 1;
+  
+  .item>.fraction-area>.average>p:nth-child(2) {
+    padding: 5px 10px;
+    border-radius: 10px;
   }
-  .number-mark{
+  
+  .first-item>.fraction-area>.fraction>p:nth-child(2) {
+    background-color: #2783be;
+    border: 1.5px solid #2783be;
+  }
+  
+  .first-item>.fraction-area>.average>p:nth-child(2) {
+    color: #2783be;
+    border: 1.5px solid #2783be;
+  }
+  
+  .two-item>.fraction-area>.fraction>p:nth-child(2) {
+    background-color: #d4655c;
+    border: 1.5px solid #d4655c;
+  }
+  
+  .two-item>.fraction-area>.average>p:nth-child(2) {
+    color: #d4655c;
+    border: 1.5px solid #d4655c;
+  }
+  
+  .three-item>.fraction-area>.fraction>p:nth-child(2) {
+    background-color: #e1b539;
+    border: 1.5px solid #e1b539;
+  }
+  
+  .three-item>.fraction-area>.average>p:nth-child(2) {
+    color: #e1b539;
+    border: 1.5px solid #e1b539;
+  }
+  
+  .four-item>.fraction-area>.fraction>p:nth-child(2) {
+    background-color: #3f9979;
+    border: 1.5px solid #3f9979;
+  }
+  
+  .four-item>.fraction-area>.average>p:nth-child(2) {
+    color: #3f9979;
+    border: 1.5px solid #3f9979;
+  }
+  
+  .five-item>.fraction-area>.fraction>p:nth-child(2) {
+    background-color: #675f91;
+    border: 1.5px solid #675f91;
+  }
+  
+  .five-item>.fraction-area>.average>p:nth-child(2) {
+    color: #675f91;
+    border: 1.5px solid #675f91;
+  }
+  
+  .score {
+    font-size: 25px;
+    margin-left: 5px;
+  }
+  
+  .title-mark {
+    position: relative;
+    width: 20%;
+    z-index: 1;
+  }
+  
+  .number-mark {
     position: absolute;
     left: -5%;
     top: -15%;
     width: 40%;
   }
-  .item-content{
+  
+  .item-content {
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 1px 1px 5px #4b4b4b45;
     overflow: hidden;
     width: 75%;
     margin-left: -5%;
-}
-  .content-title{
-      padding: 10px 10px 10px 10%;
   }
-  .first-item>.item-content>.content-title{
-    background-color: #2783be;
-}
-.two-item>.item-content>.content-title{
-  background-color: #d4655c;
-}
-.three-item>.item-content>.content-title{
-  background-color: #e1b539;
-}
-.four-item>.item-content>.content-title{
-  background-color: #3f9979;
-}
-.five-item>.item-content>.content-title{
-  background-color: #675f91;
-}
-  .content-introduce{
+  
+  .content-title {
     padding: 10px 10px 10px 10%;
-}
-.chartbar-area {
+  }
+  
+  .first-item>.item-content>.content-title {
+    background-color: #2783be;
+  }
+  
+  .two-item>.item-content>.content-title {
+    background-color: #d4655c;
+  }
+  
+  .three-item>.item-content>.content-title {
+    background-color: #e1b539;
+  }
+  
+  .four-item>.item-content>.content-title {
+    background-color: #3f9979;
+  }
+  
+  .five-item>.item-content>.content-title {
+    background-color: #675f91;
+  }
+  
+  .content-introduce {
+    padding: 10px 10px 10px 10%;
+  }
+  
+  .chartbar-area {
     margin: 0px auto;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
     width: 100%;
     position: relative;
-}
-.chartbar-bg{
-  position: absolute;
+    padding: 20px 0px;
+  }
+  
+  .chartbar-bg {
+    position: absolute;
     width: 100%;
     bottom: 0;
     line-height: 0px;
-}
-.srscore,
-.cefr-level,
-.actfl-level{
+  }
+  
+  .srscore,
+  .cefr-level,
+  .actfl-level {
     width: 30%;
     background-color: #f7ae00;
     border-radius: 50%;
@@ -342,225 +642,32 @@ border: 1.5px solid #675f91;
     justify-content: center;
     flex-direction: column;
     z-index: 2;
-}
-.srscore>p,
-.cefr-level>p,
-.actfl-level>p{
+  }
+  
+  .srscore>p,
+  .cefr-level>p,
+  .actfl-level>p {
     text-align: center;
-    color: #2783be;
-}
-.bottom-text{
-  width: 100%;
-}
-.bottom-text p{
-  margin: 0 auto;
-  padding: 10px 5%;
-  text-align: center;
-  color: #fff;
-}
-.bottom-text>p:nth-child(1){
-  background-color: #2783be;
-}
-.bottom-text>p:nth-child(2){
-  background-color: #154299;
-}
-
-  @page {
-    /*size: portrait;  直向 */
-    /*size: landscape;  橫向 */
-    /*size: A4;  紙張大小 */
-    size: A4 portrait; /* 混合使用 */
-    min-height: 100vh;
-    margin: 0; /* 邊界與內容的距離 */
+    color: #154299;
   }
-
-  @media print {
-    h3{
-      font-size: 18px;
-    }
-    p{
-      font-size: 15px;
-    }
-    .page {
-      page-break-inside: avoid;
-      position: relative;
-      width: 100%;
-    }
-    .page::after {
-      /* content: counter(page-number);
-      counter-increment: page-number 1; */
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      font-size: 30px;
-      text-align: center;
-    }
-    .report-title{
-      width: 40%;
-      z-index: 2;
+  
+  .bottom-text {
+    width: 100%;
   }
-  .test-content{
-      width: 55%;
-      z-index: 2;
+  
+  .bottom-text p {
+    margin: 0 auto;
+    padding: 10px 5%;
+    text-align: center;
+    color: #fff;
   }
-  .item{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-  }
-  .fraction-area{
-      display: flex;
-      width: 100%;
-      justify-content: flex-end;
-      margin: 15px auto 5px;
-  }
-  .fraction,
-  .average{
-      display: flex;
-      align-items: center;
-      margin-left: 10px;
-  }
-  .item>.fraction-area>.fraction>p:nth-child(2){
-      color: #fff;
-      padding: 5px 10px;
-      border-radius: 10px;
-  }
-  .item>.fraction-area>.average>p:nth-child(2){
-    padding: 5px 10px;
-    border-radius: 10px;
-}
-.first-item>.fraction-area>.fraction>p:nth-child(2){
-  background-color: #2783be;
-  border: 1.5px solid #2783be;
-}
-.first-item>.fraction-area>.average>p:nth-child(2){
-color: #2783be;
-border: 1.5px solid #2783be;
-}
-.two-item>.fraction-area>.fraction>p:nth-child(2){
-  background-color: #d4655c;
-  border: 1.5px solid #d4655c;
-}
-.two-item>.fraction-area>.average>p:nth-child(2){
-color: #d4655c;
-border: 1.5px solid #d4655c;
-}
-.three-item>.fraction-area>.fraction>p:nth-child(2){
-  background-color: #e1b539;
-  border: 1.5px solid #e1b539;
-}
-.three-item>.fraction-area>.average>p:nth-child(2){
-color: #e1b539;
-border: 1.5px solid #e1b539;
-}
-.four-item>.fraction-area>.fraction>p:nth-child(2){
-  background-color: #3f9979;
-  border: 1.5px solid #3f9979;
-}
-.four-item>.fraction-area>.average>p:nth-child(2){
-color: #3f9979;
-border: 1.5px solid #3f9979;
-}
-.five-item>.fraction-area>.fraction>p:nth-child(2){
-  background-color: #675f91;
-  border: 1.5px solid #675f91;
-}
-.five-item>.fraction-area>.average>p:nth-child(2){
-color: #675f91;
-border: 1.5px solid #675f91;
-}
-  .score{
-      font-size: 25px;
-      margin-left: 5px;
-  }
-  .title-mark{
-      position: relative;
-      width: 25%;
-      z-index: 1;
-  }
-  .number-mark{
-    position: absolute;
-    left: -5%;
-    top: -15%;
-    width: 40%;
-  }
-  .item-content{
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 1px 1px 5px #4b4b4b45;
-    overflow: hidden;
-    width: 75%;
-    margin-left: -5%;
-}
-  .content-title{
-      padding: 10px 10px 10px 10%;
-  }
-  .first-item>.item-content>.content-title{
+  
+  .bottom-text>p:nth-child(1) {
     background-color: #2783be;
-}
-.two-item>.item-content>.content-title{
-  background-color: #d4655c;
-}
-.three-item>.item-content>.content-title{
-  background-color: #e1b539;
-}
-.four-item>.item-content>.content-title{
-  background-color: #3f9979;
-}
-.five-item>.item-content>.content-title{
-  background-color: #675f91;
-}
-  .content-introduce{
-    padding: 10px 10px 10px 10%;
-}
-.chartbar-area {
-    margin: 0px auto;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    position: relative;
-}
-.chartbar-bg{
-  position: absolute;
-    width: 100%;
-    bottom: 0;
-    line-height: 0px;
-}
-.srscore,
-.cefr-level,
-.actfl-level{
-    width: 30%;
-    background-color: #f7ae00;
-    border-radius: 50%;
-    max-width: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    z-index: 2;
-}
-.srscore>p,
-.cefr-level>p,
-.actfl-level>p{
-    text-align: center;
-    color: #2783be;
-}
-.bottom-text{
-  width: 100%;
-}
-.bottom-text p{
-  margin: 0 auto;
-  padding: 10px 5%;
-  text-align: center;
-  color: #fff;
-}
-.bottom-text>p:nth-child(1){
-  background-color: #2783be;
-}
-.bottom-text>p:nth-child(2){
-  background-color: #154299;
-}
-
   }
+  
+  .bottom-text>p:nth-child(2) {
+    background-color: #154299;
+  }
+
+}
