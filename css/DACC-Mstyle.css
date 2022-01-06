@@ -43,6 +43,7 @@ body {
   background-color: #F7F7F7;
   counter-reset: page-number;
   /* 初始化，名字可自訂，數值為0 */
+  -webkit-print-color-adjust: exact;
 }
 
 h1 {
@@ -418,6 +419,13 @@ rt {
 }
 
 @media print {
+  body {
+    background-color: #F7F7F7;
+    counter-reset: page-number;
+    /* 初始化，名字可自訂，數值為0 */
+    -webkit-print-color-adjust: exact;
+  }
+  
   h3 {
     font-size: 18px;
   }
@@ -426,6 +434,11 @@ rt {
     font-size: 15px;
   }
 
+  section {
+    width: 100vw;
+    height: 100vh;
+    page-break-after: always;
+  }
   .page {
     page-break-inside: avoid;
     position: relative;
@@ -455,6 +468,10 @@ rt {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 20mm;
+    margin-bottom: 20mm;
+    margin-left: 20mm;
+    margin-right: 20mm;
   }
   
   .page::after {
