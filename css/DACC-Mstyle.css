@@ -362,6 +362,7 @@ rt {
   position: absolute;
   width: 100%;
   bottom: 0;
+  left: 0;
   line-height: 0px;
 }
 
@@ -627,6 +628,7 @@ rt {
     position: absolute;
     width: 100%;
     bottom: 0;
+    left: 0;
     line-height: 0px;
   }
   
