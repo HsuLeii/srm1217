@@ -192,6 +192,7 @@ rt {
   justify-content: space-around;
   flex-wrap: wrap;
   padding-top: 15px;
+  overflow: hidden;
 }
 
 .page::after {
@@ -385,6 +386,7 @@ rt {
   align-items: center;
   width: 100%;
   position: relative;
+  bottom: 80px;
 }
 
 .chartbar-bg {
@@ -433,8 +435,21 @@ rt {
 
 .bottom-text {
   width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
 }
-
+.bottom-text::before {
+  position: absolute;
+  content: "";
+  width: 1024px;
+  height: 1024px;
+  top: -512px;
+  background: #f7f7f7;
+  border-radius: 50%;
+  z-index: -1;
+}
 .bottom-text p {
   margin: 0 auto;
   padding: 10px 5%;
