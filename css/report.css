@@ -760,7 +760,8 @@ rt {
   .bottom-text {
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
+    left: 0px;
     z-index: 1;
   }
   .bottom-text::before {
