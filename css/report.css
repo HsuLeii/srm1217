@@ -59,14 +59,14 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 26px;
   font-weight: bold;
   color: #fff;
   line-height: 1.5;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   color: #f7ae00;
   line-height: 1.6;
@@ -76,7 +76,7 @@ p,
 label,
 tr,
 td {
-  font-size: 15px;
+  font-size: 20px;
   color: #4B4B4B;
 }
 
@@ -424,6 +424,7 @@ rt {
 .actfl-level>p {
   text-align: center;
   color: #154299;
+  font-size: 22px;
 }
 
 .bottom-text {
@@ -465,11 +466,15 @@ rt {
   }
   
   h3 {
-    font-size: 18px;
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 22px;
   }
 
   p {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   section {
@@ -740,6 +745,7 @@ rt {
   .actfl-level>p {
     text-align: center;
     color: #154299;
+    font-size: 22px;
   }
   
   .bottom-text {
