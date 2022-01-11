@@ -284,6 +284,10 @@ rt {
   border: 1.5px solid #2783be;
 }
 
+.first-item>.item-content {
+  border: 1px solid #2783be;
+}
+
 .two-item>.fraction-area>.fraction>p:nth-child(2) {
   background-color: #d4655c;
   border: 1.5px solid #d4655c;
@@ -292,6 +296,10 @@ rt {
 .two-item>.fraction-area>.average>p:nth-child(2) {
   color: #d4655c;
   border: 1.5px solid #d4655c;
+}
+
+.two-item>.item-content {
+  border: 1px solid #d4655c;
 }
 
 .three-item>.fraction-area>.fraction>p:nth-child(2) {
@@ -304,6 +312,10 @@ rt {
   border: 1.5px solid #e1b539;
 }
 
+.three-item>.item-content {
+  border: 1px solid #e1b539;
+}
+
 .four-item>.fraction-area>.fraction>p:nth-child(2) {
   background-color: #3f9979;
   border: 1.5px solid #3f9979;
@@ -314,6 +326,10 @@ rt {
   border: 1.5px solid #3f9979;
 }
 
+.four-item>.item-content {
+  border: 1px solid #3f9979;
+}
+
 .five-item>.fraction-area>.fraction>p:nth-child(2) {
   background-color: #675f91;
   border: 1.5px solid #675f91;
@@ -322,6 +338,10 @@ rt {
 .five-item>.fraction-area>.average>p:nth-child(2) {
   color: #675f91;
   border: 1.5px solid #675f91;
+}
+
+.five-item>.item-content {
+  border: 1px solid #675f91;
 }
 
 .score {
@@ -622,6 +642,10 @@ rt {
     color: #2783be;
     border: 1.5px solid #2783be;
   }
+
+  .first-item>.item-content {
+    border: 1px solid #2783be;
+  }
   
   .two-item>.fraction-area>.fraction>p:nth-child(2) {
     background-color: #d4655c;
@@ -632,6 +656,10 @@ rt {
     color: #d4655c;
     border: 1.5px solid #d4655c;
   }
+
+  .two-item>.item-content {
+    border: 1px solid #d4655c;
+  }
   
   .three-item>.fraction-area>.fraction>p:nth-child(2) {
     background-color: #e1b539;
@@ -641,6 +669,10 @@ rt {
   .three-item>.fraction-area>.average>p:nth-child(2) {
     color: #e1b539;
     border: 1.5px solid #e1b539;
+  }
+
+  .three-item>.item-content {
+    border: 1px solid #e1b539;
   }
   
   .four-item>.fraction-area>.fraction>p:nth-child(2) {
@@ -653,6 +685,10 @@ rt {
     border: 1.5px solid #3f9979;
   }
   
+  .four-item>.item-content {
+    border: 1px solid #3f9979;
+  }
+  
   .five-item>.fraction-area>.fraction>p:nth-child(2) {
     background-color: #675f91;
     border: 1.5px solid #675f91;
@@ -661,6 +697,10 @@ rt {
   .five-item>.fraction-area>.average>p:nth-child(2) {
     color: #675f91;
     border: 1.5px solid #675f91;
+  }
+
+  .five-item>.item-content {
+    border: 1px solid #675f91;
   }
   
   .score {
