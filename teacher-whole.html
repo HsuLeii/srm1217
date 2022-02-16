@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRM</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- jQuery Modal -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.modal.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_logo">
+            <a href="">
+                <img src="image/logo/logo.svg" alt="">
+            </a>
+        </div>
+        <div id="toggle" class=""><span></span></div>
+        <nav>
+            <ul class="menu after-login">
+                <div class="menu-teacher">
+                    <li>
+                        <a class="current" href="teacher-whole.html">
+                            检视全体测验结果<br />
+                            <span>View the whole test results</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a  href="index.html">
+                            检视个别测验结果<br />
+                            <span>View individual test results</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a  href="index.html">
+                            检视阅读纪录<br />
+                            <span>View reading history</span>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+
+    </header>
+    <div class="main teacher">
+        <div class="color-line">
+            <div class="color1"></div>
+            <div class="color2"></div>
+            <div class="color3"></div>
+            <div class="color4"></div>
+            <div class="color5"></div>
+            <div class="color6"></div>
+            <div class="color7"></div>
+        </div>
+        <div class="teacher-title">
+            <p class="bold">检视全体测验结果<br/> View the whole test results</p> 
+        </div>
+        <div class="searchbar teacher-searchbar">
+            <div class="bookselect">
+                <div class="form">
+                    <label for="year"><b>测验年份</b></label>
+
+                    <select name="year" class="">
+                        <option value="all-year">
+                            全部
+                        </option>
+                        <option value="2022">
+                            2022
+                        </option>
+                    </select>
+                </div>
+
+                <div class="form">
+                    <label for="level"><b>题本等级</b></label>
+                    <select name="level" class="">
+                        <option value="all-level">全部</option>
+                        <option value="audio-book">A1</option>
+                        <option value="silent-book">B1</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="booksearch">
+                <input class="searchbook" type="text" placeholder="輸入書名...">
+                <button class="cursor">
+                    <p class="bold">搜尋</p>
+                </button>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="sheet table-flip">
+                <thead>
+                    <tr>
+                        <th>
+                            场次名称<br />
+                            <span>Test Session</span>
+                        </th>
+                        <th>
+                            2022 DACCM-A
+                        </th>
+                        <th>
+                            2022 DACCM-B
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>测验日期<br />
+                            <span>Test Date</span></td>
+                        <td>题本等级<br />
+                            <span>Test Level</span></td>
+                        <td>应测人数<br />
+                            <span>Number of people to be tested</span></td>
+                        <td>实测人数<br />
+                            <span>Number of people actually tested</span></td>
+                        <td>测验结果<br />
+                            <span>Test Result</span></td>
+                    </tr>
+                    <tr>
+                        <td>2022-01-01 ~ 2022-01-20</td>
+                        <td>A1</td>
+                        <td>20</td>
+                        <td>16</td>
+                        <td><a href="teacher-whole-inner.html"><img src="image/svg/magnifier.svg" alt=""> Check</a></td>
+                    </tr>
+                    <tr>
+                        <td>2022-01-01 ~ 2022-01-20</td>
+                        <td>B1</td>
+                        <td>30</td>
+                        <td>28</td>
+                        <td><a href="teacher-whole-inner.html"><img src="image/svg/magnifier.svg" alt=""> Check</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    <footer>
+    </footer>
+    <script src="js/all.js"></script>
+
+</body>
+
+</html>
