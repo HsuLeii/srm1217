@@ -28,7 +28,7 @@
             <ul class="menu after-login menu-teacher-position">
                 <div class="menu-teacher">
                     <li>
-                        <a class="current" href="teacher-whole.html">
+                        <a href="teacher-whole.html">
                             检视全体测验结果<br />
                             <span>View the whole test results</span>
                         </a>
@@ -40,7 +40,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="readhistory.html">
+                        <a class="current" href="readhistory.html">
                             检视阅读纪录<br />
                             <span>View reading history</span>
                         </a>
@@ -61,29 +61,20 @@
             <div class="color7"></div>
         </div>
         <div class="teacher-title">
-            <p class="bold">检视全体测验结果<br/> View the whole test results</p> 
+            <p class="bold">检视阅读纪录<br />View reading history</p>
         </div>
         <div class="searchbar teacher-searchbar">
             <div class="bookselect">
                 <div class="form">
-                    <label for="year"><b>测验年份</b></label>
+                    <label for="group"><b>选择学生群组</b></label>
 
-                    <select name="year" class="">
-                        <option value="all-year">
+                    <select name="group" class="">
+                        <option value="all-group">
                             全部
                         </option>
-                        <option value="2022">
-                            2022
+                        <option value="2022-1-A">
+                            2022-1-A
                         </option>
-                    </select>
-                </div>
-
-                <div class="form">
-                    <label for="level"><b>题本等级</b></label>
-                    <select name="level" class="">
-                        <option value="all-level">全部</option>
-                        <option value="audio-book">A1</option>
-                        <option value="silent-book">B1</option>
                     </select>
                 </div>
 
@@ -100,127 +91,141 @@
                 <thead>
                     <tr>
                         <th>
-                            场次名称<br />
-                            <span>Test Session</span>
+                            帐号<br />
+                            <span>Account</span>
                         </th>
                         <th>
-                            2022 DACCM-A
+                            abc@smartreading.tw
                         </th>
                         <th>
-                            2022 DACCM-B
+                            123@smartreading.tw
                         </th>
                         <th>
-                            2022 DACCM-A
+                            abc@smartreading.tw
                         </th>
                         <th>
-                            2022 DACCM-B
+                            123@smartreading.tw
                         </th>
                         <th>
-                            2022 DACCM-A
+                            abc@smartreading.tw
                         </th>
                         <th>
-                            2022 DACCM-B
+                            123@smartreading.tw
                         </th>
                         <th>
-                            2022 DACCM-A
+                            abc@smartreading.tw
                         </th>
                         <th>
-                            2022 DACCM-B
+                            123@smartreading.tw
                         </th>
                         <th>
-                            2022 DACCM-A
+                            abc@smartreading.tw
                         </th>
                         <th>
-                            2022 DACCM-B
+                            123@smartreading.tw
                         </th>
+
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>测验日期<br />
-                            <span>Test Date</span></td>
-                        <td>题本等级<br />
-                            <span>Test Level</span></td>
-                        <td>应测人数<br />
-                            <span>Number of people to be tested</span></td>
-                        <td>实测人数<br />
-                            <span>Number of people actually tested</span></td>
-                        <td>测验结果<br />
-                            <span>Test Result</span></td>
+                        <td>名字<br />
+                            <span>First Name</span></td>
+                        <td>姓氏<br />
+                            <span>Last Name</span></td>
+                        <td>前次检测ACTFL程度<br />
+                            <span>ACTFL Level</span></td>
+                        <td>前次检测CEFR程度<br />
+                            <span>CEFR Level</span></td>
+                        <td>目前阅读册数<br />
+                            <span>Number of Books Read</span></td>
+                        <td>检视阅读纪录<br />
+                            <span>Reading Record</span></td>
                     </tr>
                     <tr>
-                        <td>2022-01-01 ~ 2022-01-20</td>
+                        <td>Emily</td>
+                        <td>Khan</td>
+                        <td>Novice High</td>
                         <td>A1</td>
-                        <td>20</td>
-                        <td>16</td>
-                        <td><a href="teacher-whole-inner.html"><img src="image/svg/magnifier.svg" alt=""> Check</a></td>
+                        <td>4</td>
+                        <td><a href="readhistory-inner.html"><img src="image/svg/magnifier.svg" alt=""> Check</a></td>
                     </tr>
                     <tr>
-                        <td>2022-01-01 ~ 2022-01-20</td>
-                        <td>B1</td>
-                        <td>30</td>
-                        <td>28</td>
-                        <td><a href="teacher-whole-inner.html"><img src="image/svg/magnifier.svg" alt=""> Check</a></td>
+                        <td>Alex</td>
+                        <td>Hamilton</td>
+                        <td>Novice Mid</td>
+                        <td>Pre-A1</td>
+                        <td>75</td>
+                        <td><a href="readhistory-inner.html"><img src="image/svg/magnifier.svg" alt=""> Check</a></td>
                     </tr>
                     <tr>
-                        <td>2022-01-01 ~ 2022-01-20</td>
+                        <td>Emily</td>
+                        <td>Khan</td>
+                        <td>Novice High</td>
                         <td>A1</td>
-                        <td>20</td>
-                        <td>16</td>
-                        <td><a href="teacher-whole-inner.html"><img src="image/svg/magnifier.svg" alt=""> Check</a></td>
+                        <td>4</td>
+                        <td><a href="readhistory-inner.html"><img src="image/svg/magnifier.svg" alt=""> Check</a></td>
                     </tr>
                     <tr>
-                        <td>2022-01-01 ~ 2022-01-20</td>
-                        <td>B1</td>
-                        <td>30</td>
-                        <td>28</td>
-                        <td><a href="teacher-whole-inner.html"><img src="image/svg/magnifier.svg" alt=""> Check</a></td>
+                        <td>Alex</td>
+                        <td>Hamilton</td>
+                        <td>Novice Mid</td>
+                        <td>Pre-A1</td>
+                        <td>75</td>
+                        <td><a href="readhistory-inner.html"><img src="image/svg/magnifier.svg" alt=""> Check</a></td>
                     </tr>
                     <tr>
-                        <td>2022-01-01 ~ 2022-01-20</td>
+                        <td>Emily</td>
+                        <td>Khan</td>
+                        <td>Novice High</td>
                         <td>A1</td>
-                        <td>20</td>
-                        <td>16</td>
-                        <td><a href="teacher-whole-inner.html"><img src="image/svg/magnifier.svg" alt=""> Check</a></td>
+                        <td>4</td>
+                        <td><a href="readhistory-inner.html"><img src="image/svg/magnifier.svg" alt=""> Check</a></td>
                     </tr>
                     <tr>
-                        <td>2022-01-01 ~ 2022-01-20</td>
-                        <td>B1</td>
-                        <td>30</td>
-                        <td>28</td>
-                        <td><a href="teacher-whole-inner.html"><img src="image/svg/magnifier.svg" alt=""> Check</a></td>
+                        <td>Alex</td>
+                        <td>Hamilton</td>
+                        <td>Novice Mid</td>
+                        <td>Pre-A1</td>
+                        <td>75</td>
+                        <td><a href="readhistory-inner.html"><img src="image/svg/magnifier.svg" alt=""> Check</a></td>
                     </tr>
                     <tr>
-                        <td>2022-01-01 ~ 2022-01-20</td>
+                        <td>Emily</td>
+                        <td>Khan</td>
+                        <td>Novice High</td>
                         <td>A1</td>
-                        <td>20</td>
-                        <td>16</td>
-                        <td><a href="teacher-whole-inner.html"><img src="image/svg/magnifier.svg" alt=""> Check</a></td>
+                        <td>4</td>
+                        <td><a href="readhistory-inner.html"><img src="image/svg/magnifier.svg" alt=""> Check</a></td>
                     </tr>
                     <tr>
-                        <td>2022-01-01 ~ 2022-01-20</td>
-                        <td>B1</td>
-                        <td>30</td>
-                        <td>28</td>
-                        <td><a href="teacher-whole-inner.html"><img src="image/svg/magnifier.svg" alt=""> Check</a></td>
+                        <td>Alex</td>
+                        <td>Hamilton</td>
+                        <td>Novice Mid</td>
+                        <td>Pre-A1</td>
+                        <td>75</td>
+                        <td><a href="readhistory-inner.html"><img src="image/svg/magnifier.svg" alt=""> Check</a></td>
                     </tr>
                     <tr>
-                        <td>2022-01-01 ~ 2022-01-20</td>
+                        <td>Emily</td>
+                        <td>Khan</td>
+                        <td>Novice High</td>
                         <td>A1</td>
-                        <td>20</td>
-                        <td>16</td>
-                        <td><a href="teacher-whole-inner.html"><img src="image/svg/magnifier.svg" alt=""> Check</a></td>
+                        <td>4</td>
+                        <td><a href="readhistory-inner.html"><img src="image/svg/magnifier.svg" alt=""> Check</a></td>
                     </tr>
                     <tr>
-                        <td>2022-01-01 ~ 2022-01-20</td>
-                        <td>B1</td>
-                        <td>30</td>
-                        <td>28</td>
-                        <td><a href="teacher-whole-inner.html"><img src="image/svg/magnifier.svg" alt=""> Check</a></td>
+                        <td>Alex</td>
+                        <td>Hamilton</td>
+                        <td>Novice Mid</td>
+                        <td>Pre-A1</td>
+                        <td>75</td>
+                        <td><a href="readhistory-inner.html"><img src="image/svg/magnifier.svg" alt=""> Check</a></td>
                     </tr>
                 </tbody>
             </table>
         </div>
+
         <div class="page page-teacher">
             <span id="" class="pagination">
                 <a disabled="disabled" class="pagenumber firstnn">第一頁</a>
@@ -238,7 +243,7 @@
                 <p></p>
             </span>
         </div>
-        
+
     </div>
     <footer>
     </footer>
