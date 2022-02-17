@@ -5767,6 +5767,9 @@ text-align: center;
 }
 
 /*教師端*/
+.menu-teacher-position{
+  position: absolute;
+}
 .menu-teacher {
   display: flex;
   border-radius: 10px;
@@ -5829,16 +5832,16 @@ text-align: center;
 .sheet {
   overflow: hidden;
   width: 90%;
-  margin: 0 auto;
+  margin: 40px auto;
 display: table;
 }
 
 .sheet th{
   text-align: center;
-  border-top: 1px solid #4B4B4B;
+  border-top: 1px solid #d9d7ce;
 }
 .sheet th:nth-last-child(1){
-  border-bottom: 1px solid #4B4B4B;
+  border-bottom: 1px solid #d9d7ce;
 }
 .sheet th span{
   font-size: 15px;
@@ -5851,7 +5854,7 @@ display: table;
 
 .sheet td {
   text-align: center;
-  border: 1px solid #4b4b4b;
+  border: 1px solid #d9d7ce;
   font-weight: bold;
 }
 .sheet td span{
@@ -5861,6 +5864,7 @@ display: table;
   color: #00a7e5;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .sheet td a img{
@@ -5869,7 +5873,7 @@ display: table;
 }
 
 th:nth-child(even),td:nth-child(even) {
-  background-color: #EEEEEE;
+  background-color: #f2f0e6;
 }
 
 .sheet th {
@@ -5893,8 +5897,12 @@ transition-delay: 0s;
   display: flex;
   flex-direction: column;
 }
-.table-flip th
-{
+.table-flip th{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  max-width: 400px;
   padding: 15px 20px;
 }
 .table-flip tbody{
@@ -5903,11 +5911,14 @@ transition-delay: 0s;
 
 .teacher-searchbar{
   width: 90%;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   max-width: 1500px;
 }
-
-.bookselect.wrap{
+.teacherselect{
+  display: flex;
+  margin-bottom: 15px;
+}
+.teacherselect.wrap{
   flex-wrap: wrap;
 }
 .session{
@@ -5931,6 +5942,11 @@ transition-delay: 0s;
 }
 .download-btn:hover{
   background-color: #c6c6c6;
+}
+
+.page-teacher{
+  width: 90%;
+  margin: 0px auto 60px;
 }
 
 @media (max-width: 1024px) {
@@ -6330,7 +6346,7 @@ transition-delay: 0s;
   }
 
   .select-pages-number {
-    margin: 0 auto;
+    margin: 20px auto 40px;
   }
 
   .book-title>h4 {
@@ -6948,6 +6964,9 @@ transition-delay: 0s;
 .menu-teacher li{
   text-align: left;
 }
+.table-flip th {
+  max-width: 300px;
+  }
 }
 
 
@@ -8111,10 +8130,6 @@ transition-delay: 0s;
   font-size: 25px;
 }
 .table-flip th {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  -webkit-box-orient: vertical;
   width: 160px;
 }
 .sheet td a img{
