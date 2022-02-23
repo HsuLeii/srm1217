@@ -5833,12 +5833,14 @@ text-align: center;
 
 .school-name{
   width: 90%;
+  max-width:1500px;
   margin: 0 auto 40px;
   color: #0082b0;
 }
 
 .school-name h3{
   color: #00a7e5;
+  text-align:right;
 }
 
 .sheet {
@@ -5936,9 +5938,33 @@ transition-delay: 0s;
 .session{
   width: 90%;
   margin: 0 auto 20px;
+}
+.session-prev img{
+  width: 15px;
+}
+.session-prev a{
+  color: #4B4B4B;
+}
+.session h3{
     text-align: center;
     color: #00a7e5;
     font-size: 28px;
+    margin-top: 20px;
+}
+.session-arrow{
+  border: solid #4b4b4b;
+  border-width: 0px 0px 3px 3px;
+  transform: rotate(45deg);
+  margin: 0px 0px 3px 3px;
+  display: inline-block;
+  padding: 3px;
+}
+.session-prev:hover > a{
+  color: #00a7e5;
+}
+.session-prev:hover > a > span{
+  border: solid #00a7e5;
+  border-width: 0px 0px 3px 3px;
 }
 .excelfile{
   display: flex;
@@ -5961,6 +5987,18 @@ transition-delay: 0s;
   margin: 0px auto 60px;
 }
 
+.filter{
+  margin-bottom: 15px;
+}
+.filter a{
+  color: #4B4B4B;
+}
+.filter a:hover{
+  color: #00a7e5;
+}
+.filter span{
+  color: #00a7e5;
+}
 @media (max-width: 1024px) {
   .padhide {
     display: none;
@@ -6969,6 +7007,9 @@ transition-delay: 0s;
   }
 
   /*教師端*/
+  .menu-teacher-position {
+     position: fixed; 
+}
 .main.teacher{
   padding-top: 85px;
 }
@@ -6981,6 +7022,9 @@ transition-delay: 0s;
 .table-flip th {
   max-width: 300px;
   }
+  .session h3{
+    text-align: left;
+}
 }
 
 
