@@ -5999,6 +5999,10 @@ transition-delay: 0s;
 .filter span{
   color: #00a7e5;
 }
+
+.booksearch_individual{
+  margin-left: auto;
+}
 @media (max-width: 1024px) {
   .padhide {
     display: none;
