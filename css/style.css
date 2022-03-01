@@ -2570,8 +2570,8 @@ a.read,
 }
 
 .blocker {
-  background-color: rgba(0, 0, 0, 0.8) !important;
-  /* background-color: #00a7e5f0 !important; */
+  background-color: rgba(0, 0, 0, 0.75) !important;
+  /* background-color: rgba(0, 167, 299, 0.75) !important; */
 }
 
 /*login 登入*/
