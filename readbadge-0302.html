@@ -21,20 +21,31 @@
       z-index: 1;
   ">
         
-    <img src="image/photo/streamer-1.gif" alt=""style="
+    <img src="image/photo/streamer-1.gif" alt="" class="streamer" style="
     width: 100%;
     position: absolute;
     z-index: -1;
     left: 0;
     top: 0;
     max-width: none;
+    animation: my-animation 5s;
+    animation-iteration-count:1;
+    
 ">  
     </div>
-    <style>@keyframes scale-0 {
-      0% { transform: scale(0.5); }
-      50% { transform: scale(1.2); }
-      100% { transform: scale(0.5); }
-    } </style>
+    <script>
+      $(document).ready(function(){
+    $(".streamer").show();
+    setTimeout(function () {
+        $(".streamer").hide();
+    }, 5000);
+});
+    </script>
+    <style>@keyframes my-animation{
+     0% { display: none; visibility: hidden; }
+	100% { display: block; visibility: visible;  }
+    }
+     </style>
     <div class="modal-text">
       <h3>閱讀章</h3>
       <p>閱讀一本書可獲得一枚</p>
