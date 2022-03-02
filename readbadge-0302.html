@@ -9,7 +9,7 @@
   <a href="#readbadge" rel="modal:open" class="read cursor">閱讀</a>
 </div>
 
-<div id="readbadge" class="modal badge-modal read-badge-modal">
+<div id="readbadge" class="modal badge-modal read-badge-modal" style="position: initial;">
   <div class="read-badge badge-modal-content">
     <div class="modal-text">
       <h3>恭喜！你獲得了一枚閱讀認證章</h3>
@@ -17,14 +17,17 @@
     <div class="modal-img" >
       <img src="image/photo/readbadge-FX.png" alt="" style="
               width: 100%;
-      position: absolute;
       margin: 25px auto;
       z-index: 1;
   ">
         
     <img src="image/photo/streamer.gif" alt=""style="
     width: 100%;
-
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    max-width: none;
 ">  
     </div>
     <style>@keyframes scale-0 {
