@@ -5,30 +5,20 @@
 <script src="js/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="css/jquery.modal.min.css" />
 
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 <div class="button">
   <a href="#readbadge" rel="modal:open" class="read cursor">閱讀</a>
 </div>
-
+<audio controls autoplay >
+  <source src="https://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 <div id="readbadge" class="modal badge-modal read-badge-modal" style="position: initial;">
   <div class="read-badge badge-modal-content">
     <div class="modal-text">
       <h3>恭喜！你獲得了一枚閱讀認證章</h3>
     </div>
-    <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_rovf9gzu.json"  background="transparent"  speed="1"  style="width: 1920px; height: 930px;"   controls autoplay></lottie-player>
-
-    <div class="modal-img" >
-      <img src="image/photo/readbadge-FX.png" alt="" style="
-              width: 100%;
-      margin: 25px auto;
-      z-index: 1;
-  ">
-    </div>
-    <audio controls autoplay >
-      <source src="https://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
+    
     <style>@keyframes my-animation{
         0%{
             opacity:1;
