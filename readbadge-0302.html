@@ -15,37 +15,56 @@
       <h3>恭喜！你獲得了一枚閱讀認證章</h3>
     </div>
     <div class="modal-img" >
-      <img src="image/photo/readbadge-FX.png" alt="" style="
-              width: 100%;
-      margin: 25px auto;
-      z-index: 1;
-  ">
-        
-    <img src="image/photo/streamer.png" alt="" class="streamer" style="
-    width: 50%;
-    position: absolute;
-    z-index: -1;
-    left: 50%;
-    transform: translate(-50%, 0px);
-    top: 0;
-    max-width: none;
-    animation: my-animation 5s;
-    animation-iteration-count:1;
-    
-">  
+      <div class="box">
+        <img src="image/photo/light.png" alt="" class="light">
+        <img src="image/photo/850-readbadge.png" alt="" class="readbadge" >
+        <img src="image/photo/start.png" alt="" class="start">
+        </div>
     </div>
-    <script>
-      $(document).ready(function(){
-    $(".streamer").show();
-    setTimeout(function () {
-        $(".streamer").hide();
-    }, 5000);
-});
-    </script>
-    <style>@keyframes my-animation{
-     0% { display: none; visibility: hidden; }
-	100% { display: block; visibility: visible;  }
-    }
+    
+
+    <style>
+    .box{
+  position: relative;
+}
+.readbadge{
+      position: absolute;
+  left:0px;
+  z-index:1;
+  animation:badge 0.8s;
+  transform-origin: center;
+  transform: scale(0);
+    animation-fill-mode:forwards
+}
+.light{
+  animation:light 1.5s linear infinite;
+animation-delay: 0.8s;
+  transform-origin: center;
+  opacity: 0;
+  z-index: -2;
+}
+.start{
+  position: absolute;
+  left: 0;
+  animation:start 3s; 
+  transform-origin: center;
+  opacity: 0;
+}
+
+@-webkit-keyframes start{
+  0% { transform: scale(0); opacity: 1; }
+  40% { transform: scale(1.2);opacity: 1; }
+  100% { transform: scale(1);opacity: 0; }
+}
+@-webkit-keyframes badge{
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+@-webkit-keyframes light{
+   0% { transform: rotate(0deg) ;opacity: 1;}
+  100% { transform: rotate(360deg) ;opacity: 1;}
+  
+}
      </style>
     <div class="modal-text">
       <h3>閱讀章</h3>
