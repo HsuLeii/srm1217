@@ -4708,20 +4708,32 @@ fieldset.img>.answer-list {
 .badge-box{
   position: relative;
   margin: 0 auto;
-  width: 80%;
+  padding: 0% 10%;
+  background: #fff;
+  border-radius: 10px 10px 0px 0px;
 }
 .modal-img{
-  border: 1.5px solid #004570;
-            background-color: #fff;
+  border: 1.5px solid #00a7e5;
+            background-color: #00a7e5;
             margin: 20px auto 0px;;
             border-radius: 10px;
             width: 60%;
 }
+.modal-img-read{
+  border: 1.5px solid #004570;
+  background-color: #004570;
+}
+.modal-img-test{
+  border: 1.5px solid #ff7300;
+  background-color: #ff7300;
+}
+.modal-img-great{
+  border: 1.5px solid #267680;
+  background-color: #267680;
+}
 .modal-img .modal-text{
-  background: #004570;
    padding:10px;
     border-radius: 0px 0px 10px 10px;
-    border: 1.5px solid #004570;
 }
 .modal-img h3{
   color: #fff;
@@ -4733,7 +4745,8 @@ fieldset.img>.answer-list {
   animation:badge 0.8s;
   transform-origin: center;
   transform: scale(0);
-    animation-fill-mode:forwards
+    animation-fill-mode:forwards;
+    padding: 0% 10%;
 }
 .light{
   animation:light 1.5s linear infinite;
@@ -4747,7 +4760,7 @@ animation-delay: 0.8s;
   position: absolute;
       right: 0%;
       bottom: 0%;
-      transform: translate(50%, -100px);
+      transform: translate(30%, -100px);
       width:30%;
       z-index: -1;
 }
@@ -8019,6 +8032,10 @@ transition-delay: 0s;
   .wrong::before,
   .correct::before {
     left: -70px;
+  }
+
+  .bookman{
+    display: none;
   }
 
   /*course 閱讀歷程*/
