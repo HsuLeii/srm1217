@@ -9,82 +9,25 @@
   <a href="#readbadge" rel="modal:open" class="read cursor">閱讀</a>
 </div>
 
-<div id="readbadge" class="modal badge-modal read-badge-modal" 
-style="background: #fffbf1 !important; box-shadow: 0 0 10px #000;">
+<div id="readbadge" class="modal badge-modal read-badge-modal">
   <div class="read-badge badge-modal-content">
-      <div class="bookman" style="position: absolute;
-      right: 0%;
-      bottom: 0%;
-      transform: translate(50%, -100px);
-      width:30%">
-          <img src="image/photo/bookman.png" alt="" 
-          style="max-width: none; margin: 0 auto; width: 100%;">
+      <div class="bookman">
+          <img src="image/photo/bookman.png" alt="">
       </div>
     <div class="modal-text">
       <h3 style="color: #4B4B4B;">恭喜！你獲得了一枚閱讀認證章</h3>
     </div>
-    <div class="modal-img" 
-    style="    box-shadow: rgb(0 0 0 / 75%) 5px 5px 10px;
-    background-color: #fff;
-    margin: 20px auto 0px;;
-    border-radius: 10px;" >
-      <div class="box">
+    <div class="modal-img"  >
+      <div class="badge-box">
         <img src="image/photo/light.png" alt="" class="light">
-        <img src="image/photo/850-readbadge.png" alt="" class="readbadge" >
-        <img src="image/photo/start.png" alt="" class="start">
+        <img src="image/photo/readbadge.png" alt="" class="readbadge" >
         </div>
-        <div class="modal-text" style="background: #004570; padding:10px; border-radius: 0px 0px 10px 10px;">
-            <h3 style="color: #fff;">閱讀章</h3>
-            <p style="color: #fff;">閱讀一本書可獲得一枚</p>
+        <div class="modal-text">
+            <h3>閱讀章</h3>
+            <p>閱讀一本書可獲得一枚</p>
           </div>
     </div>
-    
 
-    <style>
-    .box{
-  position: relative;
-  margin: 0 auto;
-  width: 80%;
-}
-.readbadge{
-      position: absolute;
-  left:0px;
-  z-index:1;
-  animation:badge 0.8s;
-  transform-origin: center;
-  transform: scale(0);
-    animation-fill-mode:forwards
-}
-.light{
-  animation:light 1.5s linear infinite;
-animation-delay: 0.8s;
-  transform-origin: center;
-  opacity: 0;
-  z-index: -2;
-}
-.start{
-  position: absolute;
-  left: 0;
-  animation:start 3s; 
-  transform-origin: center;
-  opacity: 0;
-}
-
-@-webkit-keyframes start{
-  0% { transform: scale(0); opacity: 1; }
-  40% { transform: scale(1.2);opacity: 1; }
-  100% { transform: scale(1);opacity: 0; }
-}
-@-webkit-keyframes badge{
-  0% { transform: scale(0); }
-  100% { transform: scale(1); }
-}
-@-webkit-keyframes light{
-   0% { transform: rotate(0deg) ;opacity: 1;}
-  100% { transform: rotate(360deg) ;opacity: 1;}
-  
-}
-     </style>
     
     <div class="button">
       <a href="#close-modal" rel="modal:close" class="cursor hover-effect-dark">不，我想繼續看書</a>

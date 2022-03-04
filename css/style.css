@@ -4613,13 +4613,6 @@ fieldset.img>.answer-list {
   background: #00a7e5;
 }
 
-.badge-modal {
-  background-position: center !important;
-  background-size: cover !important;
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
 /* .read-badge-modal{
   background-image: url(../image/photo/slide-personal.png) !important;
 }
@@ -4635,9 +4628,7 @@ fieldset.img>.answer-list {
 .read-badge.badge-modal-content>img,
 .read-badge.badge-modal-content>div>img {
   display: block;
-  margin: 25px auto;
-  width: 45%;
-  max-width: 450px;
+  width: 100%;
 }
 
 .read-badge.badge-modal-content>.read-first,
@@ -4689,7 +4680,6 @@ fieldset.img>.answer-list {
 .badge-modal-content>div>.modal-text>h3 {
   font-size: 26px;
   text-align: center;
-  color: #fff;
   border-bottom: 0px solid #fff;
   padding: 0px;
   margin-bottom: 5px;
@@ -4712,11 +4702,54 @@ fieldset.img>.answer-list {
 }
 
 .two-badge>div {
-  margin: 25px;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 45%;
+}
+
+.badge-box{
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+}
+.modal-img{
+  border: 1.5px solid #004570;
+            background-color: #fff;
+            margin: 20px auto 0px;;
+            border-radius: 10px;
+            width: 60%;
+}
+.modal-img .modal-text{
+  background: #004570;
+   padding:10px;
+    border-radius: 0px 0px 10px 10px;
+    border: 1.5px solid #004570;
+}
+.modal-img h3{
+  color: #fff;
+}
+.readbadge{
+      position: absolute;
+  left:0px;
+  z-index:1;
+  animation:badge 0.8s;
+  transform-origin: center;
+  transform: scale(0);
+    animation-fill-mode:forwards
+}
+.light{
+  animation:light 1.5s linear infinite;
+animation-delay: 0.8s;
+  transform-origin: center;
+  opacity: 0;
+  z-index: -2;
+}
+
+.bookman{
+  position: absolute;
+      right: 0%;
+      bottom: 0%;
+      transform: translate(50%, -100px);
+      width:30%;
+      z-index: -1;
 }
 
 /*course 閱讀歷程*/
@@ -8885,9 +8918,54 @@ input[type="radio"]:checked+*::before {
   }
 }
 
+@-webkit-keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+@-moz-keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
 
 @keyframes progress {
   0% {
     stroke-dasharray: 0 100;
   }
 }
+
+@-webkit-keyframes badge{
+          0% { transform: scale(0); }
+          100% { transform: scale(1); }
+        }
+
+@-moz-keyframes badge{
+          0% { transform: scale(0); }
+          100% { transform: scale(1); }
+        }
+
+@keyframes badge{
+          0% { transform: scale(0); }
+          100% { transform: scale(1); }
+        }
+
+        @-webkit-keyframes light{
+           0% { transform: rotate(0deg) ;opacity: 1;}
+          100% { transform: rotate(360deg) ;opacity: 1;}
+          
+        }
+
+@-moz-keyframes light{
+           0% { transform: rotate(0deg) ;opacity: 1;}
+          100% { transform: rotate(360deg) ;opacity: 1;}
+          
+        }
+
+@keyframes light{
+           0% { transform: rotate(0deg) ;opacity: 1;}
+          100% { transform: rotate(360deg) ;opacity: 1;}
+          
+        }
