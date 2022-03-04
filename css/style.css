@@ -2561,7 +2561,7 @@ a.read,
   color: #FFF;
   display: inline-block;
   min-width: 200px;
-  width: calc(50% - 4px);
+  width: calc(45% - 4px);
   text-align: center;
 }
 
