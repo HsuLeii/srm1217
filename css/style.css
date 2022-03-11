@@ -174,40 +174,6 @@ rt {
   font-weight: bold;
 }
 
-/* .line-left:before,
-.line-left:after,
-.line-right:before,
-.line-right:after,
-.line-center:before {
-  content: "";
-  position: fixed;
-  z-index: -5;
-  top: 0px;
-  height: 100%;
-  width: 1px;
-  background-color: #EAEAEA;
-}
-
-.line-left:before {
-  left: 8%;
-}
-
-.line-left:after {
-  left: 28%;
-}
-
-.line-center:before {
-  left: 50%;
-}
-
-.line-right:before {
-  right: 8%;
-}
-
-.line-right:after {
-  right: 28%;
-} */
-
 .fixed {
   overflow: hidden;
 }
@@ -1874,19 +1840,21 @@ span.active::before {
   background-color: #204d7a;
   color: #fff;
 }
-.lexical-text{
+
+.lexical-text {
   display: flex;
   align-items: center;
   margin: 10px 0px;
 }
-.lexical-text>p:nth-child(1){
+
+.lexical-text>p:nth-child(1) {
   display: flex;
-    border: 1px solid black;
-    height: 49px;
-    width: auto;
-    align-items: center;
-    padding: 15px 5px 5px;
-    margin-right: 15px;
+  border: 1px solid black;
+  height: 49px;
+  width: auto;
+  align-items: center;
+  padding: 15px 5px 5px;
+  margin-right: 15px;
 }
 
 /*優選書單 booklist*/
@@ -2090,7 +2058,8 @@ span.active::before {
 .bookmenu>.c2>p>a {
   color: #204d7a;
 }
-.bookmenu-standard{
+
+.bookmenu-standard {
   display: none;
   position: absolute;
   left: 0px;
@@ -2101,10 +2070,12 @@ span.active::before {
   padding: 5px 8px;
   border-radius: 10px;
 }
-.bookmenu-standard p{
+
+.bookmenu-standard p {
   text-align: left;
 }
-.bookmenu div:hover > .bookmenu-standard{
+
+.bookmenu div:hover>.bookmenu-standard {
   display: block;
 }
 
@@ -2561,7 +2532,7 @@ a.read,
   color: #FFF;
   display: inline-block;
   min-width: 200px;
-  width: calc(45% - 4px);
+  width: calc(45% - 24px);
   text-align: center;
 }
 
@@ -4673,6 +4644,7 @@ fieldset.img>.answer-list {
 .badge-modal-content>.button {
   width: 100%;
   border-top: 1px solid #fff;
+  text-align: center;
 }
 
 .badge-modal-content>.modal-text>h3,
@@ -4686,9 +4658,7 @@ fieldset.img>.answer-list {
 }
 
 .badge-modal-content>.modal-text>p,
-.badge-modal-content>.two-badge>div>.modal-text>p,
 .badge-modal-content>div>.modal-text>p {
-  color: #fff;
   text-align: center;
 }
 
@@ -4705,74 +4675,92 @@ fieldset.img>.answer-list {
   width: 45%;
 }
 
-.badge-box{
+.badge-box {
   position: relative;
   margin: 0 auto;
   padding: 0% 10%;
   background: #fff;
   border-radius: 10px 10px 0px 0px;
 }
-.modal-img{
+
+.modal-img {
   border: 1.5px solid transparent;
-            background-color: transparent;
-            margin: 20px auto 0px;;
-            border-radius: 10px;
-            width: 60%;
+  background-color: transparent;
+  margin: 20px auto 0px;
+  ;
+  border-radius: 10px;
+  width: 60%;
 }
-.modal-img-read{
+
+.modal-img>.modal-text>p {
+  color: #fff;
+  text-align: center;
+}
+
+.modal-img-read {
   border: 1.5px solid #004570;
   background-color: #004570;
 }
-.modal-img-test{
+
+.modal-img-test {
   border: 1.5px solid #ff7300;
   background-color: #ff7300;
 }
-.modal-img-great{
+
+.modal-img-great {
   border: 1.5px solid #267680;
   background-color: #267680;
 }
-.modal-img .modal-text{
-   padding:10px;
-    border-radius: 0px 0px 10px 10px;
+
+.modal-img .modal-text {
+  padding: 10px;
+  border-radius: 0px 0px 10px 10px;
 }
-.modal-img-bookman > .badge-box{
+
+.modal-img-bookman>.badge-box {
   background-color: transparent;
 }
-.modal-img-bookman > .modal-text h3,
-.modal-img-bookman > .modal-text p{
+
+.modal-img-bookman>.modal-text h3,
+.modal-img-bookman>.modal-text p {
   color: #4B4B4B !important;
 }
-.modal-img h3{
+
+.modal-img h3 {
   color: #fff;
+  text-align: center;
 }
-.readbadge{
-      position: absolute;
-  left:0px;
-  z-index:1;
-  animation:badge 0.8s;
+
+.readbadge-modal {
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+  animation: badge 0.8s;
   transform-origin: center;
   transform: scale(0);
-    animation-fill-mode:forwards;
-    padding: 0% 10%;
+  animation-fill-mode: forwards;
+  padding: 0% 10%;
 }
-.bookmanbadge{
+
+.bookmanbadge {
   position: relative;
 }
-.light{
-  animation:light 1.5s linear infinite;
-animation-delay: 0.8s;
+
+.light {
+  animation: light 1.5s linear infinite;
+  animation-delay: 0.8s;
   transform-origin: center;
   opacity: 0;
   z-index: -2;
 }
 
-.bookman{
+.bookman {
   position: absolute;
-      right: 0%;
-      bottom: 0%;
-      transform: translate(30%, -100px);
-      width:30%;
-      z-index: -1;
+  right: 0%;
+  bottom: 0%;
+  transform: translate(30%, -100px);
+  width: 30%;
+  z-index: -1;
 }
 
 /*course 閱讀歷程*/
@@ -5824,99 +5812,118 @@ text-align: center;
 }
 
 /*教師端*/
-.menu-teacher-position{
+.menu-teacher-position {
   position: absolute;
 }
+
 .menu-teacher {
   display: flex;
   border-radius: 10px;
   margin: 0px 5px;
 }
-.menu-teacher li{
+
+.menu-teacher li {
   text-align: center;
   padding: 15px 12px;
 }
-.menu-teacher li a{
+
+.menu-teacher li a {
   font-size: 20px;
 }
-.menu-teacher li a span{
+
+.menu-teacher li a span {
   font-size: 15px;
 }
-.main.teacher{
+
+.main.teacher {
   padding-top: 115px;
 }
-.color-line{
+
+.color-line {
   width: 100%;
   height: 5px;
   display: flex;
 }
-.color-line > div{
+
+.color-line>div {
   width: calc(100% / 7);
 }
-.color1{
+
+.color1 {
   background-color: #19ba94;
 }
-.color2{
+
+.color2 {
   background-color: #65871d;
 }
-.color3{
+
+.color3 {
   background-color: #0d7d67;
 }
-.color4{
+
+.color4 {
   background-color: #e97f5c;
 }
-.color5{
+
+.color5 {
   background-color: #fd9b1f;
 }
-.color6{
+
+.color6 {
   background-color: #418291;
 }
-.color7{
+
+.color7 {
   background-color: #204d7a;
 }
 
-.teacher-title{
+.teacher-title {
   padding: 70px 60px;
   background-image: url(../image/photo/slide-teacher.jpg);
   background-position: center center;
   background-size: cover;
   margin-bottom: 80px;
 }
-.teacher-title p{
+
+.teacher-title p {
   font-size: 30px;
   color: #fff;
 }
 
-.school-name{
+.school-name {
   width: 90%;
   margin: 0 auto 40px;
   color: #0082b0;
 }
 
-.school-name h3{
+.school-name h3 {
   color: #00a7e5;
-  text-align:right;
+  text-align: right;
 }
 
 .sheet {
   overflow: hidden;
   width: 90%;
   margin: 40px auto;
-display: table;
+  display: table;
 }
 
-.sheet th{
+.sheet th {
   text-align: center;
   border-top: 1px solid #d9d7ce;
 }
-.sheet th:nth-last-child(1){
+
+.sheet th:nth-last-child(1) {
   border-bottom: 1px solid #d9d7ce;
 }
-.sheet th span{
+
+.sheet th span {
   font-size: 15px;
 }
-.sheet td, .sheet th {
-  padding:15px 20px; 
+
+.sheet td,
+.sheet th {
+  padding: 15px 20px;
   white-space: nowrap;
   border-collapse: collapse;
 }
@@ -5926,22 +5933,25 @@ display: table;
   border: 1px solid #d9d7ce;
   font-weight: bold;
 }
-.sheet td span{
+
+.sheet td span {
   font-size: 15px;
 }
-.sheet td a{
+
+.sheet td a {
   color: #00a7e5;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.sheet td a img{
+.sheet td a img {
   width: 20px;
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
-th:nth-child(even),td:nth-child(even) {
+th:nth-child(even),
+td:nth-child(even) {
   background-color: #f2f0e6;
 }
 
@@ -5951,22 +5961,24 @@ th:nth-child(even),td:nth-child(even) {
 }
 
 .sheet td:hover {
-background-color: #f5c000;
-color: #000;
-transition-delay: 0s;
+  background-color: #f5c000;
+  color: #000;
+  transition-delay: 0s;
   transition-duration: 0.4s;
   transition-property: all;
 }
 
-.table-flip{
+.table-flip {
   display: flex;
   justify-content: center;
 }
-.table-flip thead tr{
+
+.table-flip thead tr {
   display: flex;
   flex-direction: column;
 }
-.table-flip th{
+
+.table-flip th {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -5974,38 +5986,46 @@ transition-delay: 0s;
   max-width: 400px;
   padding: 15px 20px;
 }
-.table-flip tbody{
+
+.table-flip tbody {
   overflow-x: auto;
 }
 
-.teacher-searchbar{
+.teacher-searchbar {
   width: 90%;
   margin: 0 auto;
 }
-.teacherselect{
+
+.teacherselect {
   display: flex;
   margin-bottom: 15px;
 }
-.teacherselect.wrap{
+
+.teacherselect.wrap {
   flex-wrap: wrap;
 }
-.session{
+
+.session {
   width: 90%;
   margin: 0 auto 20px;
 }
-.session-prev img{
+
+.session-prev img {
   width: 15px;
 }
-.session-prev a{
+
+.session-prev a {
   color: #4B4B4B;
 }
-.session h3{
-    text-align: center;
-    color: #00a7e5;
-    font-size: 28px;
-    margin-top: 20px;
+
+.session h3 {
+  text-align: center;
+  color: #00a7e5;
+  font-size: 28px;
+  margin-top: 20px;
 }
-.session-arrow{
+
+.session-arrow {
   border: solid #4b4b4b;
   border-width: 0px 0px 3px 3px;
   transform: rotate(45deg);
@@ -6013,50 +6033,59 @@ transition-delay: 0s;
   display: inline-block;
   padding: 3px;
 }
-.session-prev:hover > a{
+
+.session-prev:hover>a {
   color: #00a7e5;
 }
-.session-prev:hover > a > span{
+
+.session-prev:hover>a>span {
   border: solid #00a7e5;
   border-width: 0px 0px 3px 3px;
 }
-.excelfile{
+
+.excelfile {
   display: flex;
   align-items: center;
   margin-top: 5px;
 }
-.download-btn{
+
+.download-btn {
   background-color: #f9f9f9;
   margin: 0 10px;
-    padding: 3px 8px;
-    border: 1px solid #c6c6c6;
-    border-radius: 10px;
+  padding: 3px 8px;
+  border: 1px solid #c6c6c6;
+  border-radius: 10px;
 }
-.download-btn:hover{
+
+.download-btn:hover {
   background-color: #c6c6c6;
 }
 
-.page-teacher{
+.page-teacher {
   width: 90%;
   margin: 0px auto 60px;
 }
 
-.filter{
+.filter {
   margin-bottom: 15px;
 }
-.filter a{
+
+.filter a {
   color: #4B4B4B;
 }
-.filter a:hover{
-  color: #00a7e5;
-}
-.filter span{
+
+.filter a:hover {
   color: #00a7e5;
 }
 
-.booksearch_individual{
+.filter span {
+  color: #00a7e5;
+}
+
+.booksearch_individual {
   margin-left: auto;
 }
+
 @media (max-width: 1024px) {
   .padhide {
     display: none;
@@ -6467,9 +6496,9 @@ transition-delay: 0s;
     font-size: 15px;
   }
 
-  .bookmenu div:hover > .bookmenu-standard {
+  .bookmenu div:hover>.bookmenu-standard {
     display: none;
-}
+  }
 
 
   /*login 登入*/
@@ -6802,7 +6831,7 @@ transition-delay: 0s;
 
   .progress-bar-area {
     margin: 90px auto 0px;
-}
+  }
 
   /*個人首頁 personal*/
 
@@ -7066,23 +7095,28 @@ transition-delay: 0s;
 
   /*教師端*/
   .menu-teacher-position {
-     position: fixed; 
-}
-.main.teacher{
-  padding-top: 85px;
-}
-.menu-teacher{
-  flex-direction: column;
-}
-.menu-teacher li{
-  text-align: left;
-}
-.table-flip th {
-  max-width: 300px;
+    position: fixed;
   }
-  .session h3{
+
+  .main.teacher {
+    padding-top: 85px;
+  }
+
+  .menu-teacher {
+    flex-direction: column;
+  }
+
+  .menu-teacher li {
     text-align: left;
-}
+  }
+
+  .table-flip th {
+    max-width: 300px;
+  }
+
+  .session h3 {
+    text-align: left;
+  }
 }
 
 
@@ -8044,7 +8078,7 @@ transition-delay: 0s;
     left: -70px;
   }
 
-  .bookman{
+  .bookman {
     display: none;
   }
 
@@ -8238,29 +8272,33 @@ transition-delay: 0s;
   /*徽章彈跳視窗*/
 
 
-    /*教師端*/
-.main.teacher{
-  padding-top: 71px;
-  width: 100%;
-}
+  /*教師端*/
+  .main.teacher {
+    padding-top: 71px;
+    width: 100%;
+  }
 
-.teacher-title{
-  padding: 35px 20px;
-  margin-bottom: 50px;
-}
-.teacher-title p{
-  font-size: 25px;
-}
-.table-flip th {
-  width: 160px;
-}
-.sheet td a img{
-  width: 17px;
-}
-.session{
+  .teacher-title {
+    padding: 35px 20px;
+    margin-bottom: 50px;
+  }
+
+  .teacher-title p {
+    font-size: 25px;
+  }
+
+  .table-flip th {
+    width: 160px;
+  }
+
+  .sheet td a img {
+    width: 17px;
+  }
+
+  .session {
     text-align: left;
     font-size: 22px;
-}
+  }
 
 }
 
@@ -8829,10 +8867,11 @@ transition-delay: 0s;
   .dacctest img {
     height: 60px;
   }
-    /*教師端*/
-    .main.teacher{
-      padding-top: 46px;
-    }
+
+  /*教師端*/
+  .main.teacher {
+    padding-top: 46px;
+  }
 }
 
 ul.subs li a {
@@ -8964,35 +9003,71 @@ input[type="radio"]:checked+*::before {
   }
 }
 
-@-webkit-keyframes badge{
-          0% { transform: scale(0); }
-          100% { transform: scale(1); }
-        }
+@-webkit-keyframes badge {
+  0% {
+    transform: scale(0);
+  }
 
-@-moz-keyframes badge{
-          0% { transform: scale(0); }
-          100% { transform: scale(1); }
-        }
+  100% {
+    transform: scale(1);
+  }
+}
 
-@keyframes badge{
-          0% { transform: scale(0); }
-          100% { transform: scale(1); }
-        }
+@-moz-keyframes badge {
+  0% {
+    transform: scale(0);
+  }
 
-        @-webkit-keyframes light{
-           0% { transform: rotate(0deg) ;opacity: 1;}
-          100% { transform: rotate(360deg) ;opacity: 1;}
-          
-        }
+  100% {
+    transform: scale(1);
+  }
+}
 
-@-moz-keyframes light{
-           0% { transform: rotate(0deg) ;opacity: 1;}
-          100% { transform: rotate(360deg) ;opacity: 1;}
-          
-        }
+@keyframes badge {
+  0% {
+    transform: scale(0);
+  }
 
-@keyframes light{
-           0% { transform: rotate(0deg) ;opacity: 1;}
-          100% { transform: rotate(360deg) ;opacity: 1;}
-          
-        }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes light {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+
+}
+
+@-moz-keyframes light {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+
+}
+
+@keyframes light {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+
+}
