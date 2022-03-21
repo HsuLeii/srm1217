@@ -273,7 +273,6 @@ div#toggle span {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
     flex-wrap: wrap;
 }
 
